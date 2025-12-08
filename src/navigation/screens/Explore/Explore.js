@@ -1,272 +1,206 @@
-import React from 'react';
-import {
-  View,
-  Text,
-  Image,
-  StatusBar,
-  Platform,
-  Linking
-} from 'react-native';
+import React, { useEffect, useState } from "react";
+import { 
+  View, 
+  Text, 
+  StatusBar, 
+  TouchableOpacity, 
+  Image 
+} from "react-native";
 
-import { NavigationContainer, DrawerActions } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigation/drawer';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialIcons } from '@expo/vector-icons';
+import { IndicatorViewPager, PagerDotIndicator } from "rn-viewpager";
+import { MaterialIcons, SimpleLineIcons } from "@expo/vector-icons";
+import NetInfo from "@react-native-community/netinfo";
+
+import styles from "./styles";
 import * as colors from "../../../utils/colors";
+import Offline from "../Offline/Offline";
+import Loader from "../../Loader/Loader";
+import callApi from "../../../lib/apicaller";
 
-// Screens
-import SplashScreen from './screens/Splash/SplashScreen';
-import ExploreScreen from './screens/Explore/Explore';
-import FavoriteScreen from './screens/Favorite/Favorite';
-import HistoryScreen from './screens/History/History';
-import ArticleRenderScreen from './screens/ArticleRender/ArticleRender';
-import SearchScreen from './screens/Search/Search';
-import SearchedArticleRender from './screens/SearchedArticle/SearchedArticleRender';
+// SQLite services
+import { 
+  getFavorites,
+  addFavorite,
+  removeFavorite,
+  isFavorite
+} from "../../../database/services/favorites";
 
-// --------------------------------------------------------------
-// SEARCH STACK
-// --------------------------------------------------------------
+import {
+  addToHistory
+} from "../../../database/services/history";
 
-const SearchStackNav = createNativeStackNavigator();
+export default function Explore({ navigation }) {
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [isConnected, setIsConnected] = useState(true);
 
-function SearchStack() {
+  // -------------------------------
+  // Connectivity
+  // -------------------------------
+  useEffect(() => {
+    NetInfo.fetch().then(state => {
+      const online = !!state.isConnected;
+      setIsConnected(online);
+      if (online) loadArticles();
+    });
+
+    const unsubscribe = NetInfo.addEventListener(state => {
+      const online = !!state.isConnected;
+      setIsConnected(online);
+      if (online && articles.length === 0) loadArticles();
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  // -------------------------------
+  // Load Random Articles
+  // -------------------------------
+  async function loadArticles() {
+    setLoading(true);
+    try {
+      const response = await callApi("article/random/3", "GET");
+
+      // Mark favorites
+      const favs = await getFavorites();
+
+      const enriched = response.map(item => ({
+        ...item,
+        icon_color: favs.some(f => f.title === item.title)
+          ? colors.red
+          : colors.white
+      }));
+
+      setArticles(enriched);
+    } catch (err) {
+      alert(err);
+    }
+    setLoading(false);
+  }
+
+  async function refreshArticle() {
+    await loadArticles();
+  }
+
+  // -------------------------------
+  // Toggle Favorite
+  // -------------------------------
+  async function toggleFavorite(article) {
+    const alreadyFav = await isFavorite(article.title);
+
+    if (alreadyFav) {
+      await removeFavorite(article.title);
+      alert("Removed from favorites");
+      article.icon_color = colors.white;
+    } else {
+      await addFavorite(article);
+      alert("Added to favorites");
+      article.icon_color = colors.red;
+    }
+
+    setArticles(prev =>
+      prev.map(a =>
+        a.title === article.title ? { ...a, icon_color: article.icon_color } : a
+      )
+    );
+  }
+
+  // -------------------------------
+  // Add Article to History
+  // -------------------------------
+  async function openArticle(article) {
+    await addToHistory(article);
+    navigation.navigate("ExploreArticle", {
+      param: article,
+      headerTitle: article.title,
+      icon_color: article.icon_color,
+      tab: "explore"
+    });
+  }
+
+  function renderDots() {
+    return (
+      <PagerDotIndicator
+        pageCount={articles.length}
+        selectedDotStyle={{ backgroundColor: colors.purple }}
+      />
+    );
+  }
+
+  function retryApiCall() {
+    if (isConnected) loadArticles();
+    else alert("No Internet Connection");
+  }
+
+  if (!isConnected) {
+    return (
+      <View style={{ flex: 1 }}>
+        <Offline retryApiCall={retryApiCall} />
+      </View>
+    );
+  }
+
   return (
-    <SearchStackNav.Navigator
-      screenOptions={{
-        headerStyle: { backgroundColor: colors.purple },
-        headerTintColor: colors.white
-      }}
-    >
-      <SearchStackNav.Screen
-        name="SearchMain"
-        component={SearchScreen}
-        options={{ headerShown: false }}
-      />
-
-      <SearchStackNav.Screen
-        name="SearchArticle"
-        component={SearchedArticleRender}
-        options={{ title: "Result" }}
-      />
-    </SearchStackNav.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// STACK HELPERS
-// --------------------------------------------------------------
-
-function stackScreenOptions({ navigation }) {
-  return {
-    headerStyle: { backgroundColor: colors.purple },
-    headerTintColor: colors.white,
-    headerLeft: () => (
-      <MaterialIcons
-        name="menu"
-        size={27}
-        color="white"
-        style={{ marginLeft: 12 }}
-        onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-      />
-    )
-  };
-}
-
-const Stack = createNativeStackNavigator();
-
-// --------------------------------------------------------------
-// EXPLORE STACK
-// --------------------------------------------------------------
-
-function ExploreStack() {
-  return (
-    <Stack.Navigator screenOptions={stackScreenOptions}>
-      <Stack.Screen
-        name="ExploreMain"
-        component={ExploreScreen}
-        options={{ title: "Explore" }}
-      />
-
-      <Stack.Screen
-        name="ExploreArticle"
-        component={ArticleRenderScreen}
-        options={{ title: "" }}
-      />
-
-      <Stack.Screen
-        name="ExploreSearch"
-        component={SearchStack}
-        options={{ headerShown: false }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// FAVORITE STACK
-// --------------------------------------------------------------
-
-function FavoriteStack() {
-  return (
-    <Stack.Navigator screenOptions={stackScreenOptions}>
-      <Stack.Screen
-        name="FavoritesMain"
-        component={FavoriteScreen}
-        options={{ title: "Favorites" }}
-      />
-
-      <Stack.Screen
-        name="FavoriteArticle"
-        component={ArticleRenderScreen}
-        options={{ title: "" }}
-      />
-
-      <Stack.Screen
-        name="FavoriteSearch"
-        component={SearchStack}
-        options={{ headerShown: false }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// HISTORY STACK
-// --------------------------------------------------------------
-
-function HistoryStack() {
-  return (
-    <Stack.Navigator screenOptions={stackScreenOptions}>
-      <Stack.Screen
-        name="HistoryMain"
-        component={HistoryScreen}
-        options={{ title: "History" }}
-      />
-
-      <Stack.Screen
-        name="HistoryArticle"
-        component={ArticleRenderScreen}
-        options={{ title: "" }}
-      />
-
-      <Stack.Screen
-        name="HistorySearch"
-        component={SearchStack}
-        options={{ headerShown: false }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// BOTTOM TABS
-// --------------------------------------------------------------
-
-const Tab = createBottomTabNavigator();
-
-function MainTabs() {
-  return (
-    <Tab.Navigator
-      screenOptions={({ route }) => ({
-        headerShown: false,
-        tabBarActiveTintColor: colors.purple,
-        tabBarInactiveTintColor: colors.gray,
-        tabBarIcon: ({ color }) => {
-          let iconName =
-            route.name === "ExploreTab" ? "public" :
-            route.name === "FavoritesTab" ? "favorite" :
-            "history";
-
-          return <MaterialIcons name={iconName} size={27} color={color} />;
-        }
-      })}
-    >
-      <Tab.Screen name="ExploreTab" component={ExploreStack} options={{ title: "Explore" }} />
-      <Tab.Screen name="FavoritesTab" component={FavoriteStack} options={{ title: "Favorites" }} />
-      <Tab.Screen name="HistoryTab" component={HistoryStack} options={{ title: "History" }} />
-    </Tab.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// CUSTOM DRAWER CONTENT
-// --------------------------------------------------------------
-
-function CustomDrawerContent(props) {
-  return (
-    <DrawerContentScrollView {...props} style={{ backgroundColor: colors.grey }}>
+    <View style={styles.container}>
       <StatusBar translucent={false} backgroundColor={colors.purple} />
 
-      <View style={{ padding: 15 }}>
-        <Image
-          resizeMode={Platform.OS === 'ios' ? 'center' : 'contain'}
-          source={{ uri: 'http://www.f418.eu/share/f418.png' }}
-          style={{ width: '100%', height: 120 }}
-        />
+      <IndicatorViewPager
+        style={{ flex: 2 }}
+        indicator={renderDots()}
+      >
+        {articles.map((article, index) => (
+          <View key={index} style={styles.mainCarouselStyle}>
+            <TouchableOpacity
+              activeOpacity={0.9}
+              onPress={() => openArticle(article)}
+              style={styles.touchableStyle}
+            >
+              <View style={styles.titleViewStyle}>
+                <Text style={styles.titleStyle}>{article.title}</Text>
 
-        <Text style={{ color: colors.black, marginTop: 15 }}>
-          We aim to make the prototyping step easier.
-        </Text>
+                <View style={styles.icon_image_view_style}>
+                  {article.icon_color === colors.red ? (
+                    <MaterialIcons
+                      name="favorite"
+                      color={colors.purple}
+                      size={27}
+                      onPress={() => toggleFavorite(article)}
+                    />
+                  ) : (
+                    <SimpleLineIcons
+                      name="heart"
+                      color={colors.white}
+                      size={27}
+                      onPress={() => toggleFavorite(article)}
+                    />
+                  )}
+                </View>
+              </View>
 
-        <Text style={{ color: colors.black, marginTop: 10 }}>
-          This app teaches rapid prototyping methods.
-        </Text>
+              <Image
+                resizeMode="contain"
+                style={styles.imageStyle}
+                source={{ uri: article.image }}
+              />
 
-        <Text
-          style={{ color: colors.purple, marginTop: 10 }}
-          onPress={() => Linking.openURL('http://linkedin.com/in/fgreil')}
-        >
-          linkedin.com/in/fgreil
-        </Text>
-      </View>
-    </DrawerContentScrollView>
-  );
-}
+              <Text style={styles.teaserStyle} selectable>
+                {article.teaser}
+              </Text>
+            </TouchableOpacity>
 
-// --------------------------------------------------------------
-// DRAWER NAVIGATION
-// --------------------------------------------------------------
+            <TouchableOpacity style={styles.absoluteIconStyle}>
+              <MaterialIcons
+                name="autorenew"
+                color={colors.purple}
+                size={28}
+                onPress={refreshArticle}
+              />
+            </TouchableOpacity>
+          </View>
+        ))}
+      </IndicatorViewPager>
 
-const Drawer = createDrawerNavigator();
-
-function AppDrawer() {
-  return (
-    <Drawer.Navigator
-      drawerContent={(props) => <CustomDrawerContent {...props} />}
-      screenOptions={{
-        headerShown: false,
-        drawerStyle: { width: 260 }
-      }}
-    >
-      <Drawer.Screen name="Home" component={MainTabs} />
-    </Drawer.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// ROOT NAVIGATION
-// --------------------------------------------------------------
-
-const RootStack = createNativeStackNavigator();
-
-function RootNavigator() {
-  return (
-    <RootStack.Navigator screenOptions={{ headerShown: false }}>
-      <RootStack.Screen name="Splash" component={SplashScreen} />
-      <RootStack.Screen name="App" component={AppDrawer} />
-    </RootStack.Navigator>
-  );
-}
-
-// --------------------------------------------------------------
-// EXPORT — REDUX REMOVED
-// --------------------------------------------------------------
-
-export default function AppNavigator() {
-  return (
-    <NavigationContainer>
-      <RootNavigator />
-    </NavigationContainer>
+      <Loader visible={loading} />
+    </View>
   );
 }
