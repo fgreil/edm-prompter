@@ -1,1 +1,0 @@
-//export const headerLogo = require('./images/headerLogo.png');
