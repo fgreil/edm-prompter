@@ -28,5 +28,17 @@ The app uses Expo, React Navigation, and SQLite for offline storage of favorites
 ### Explore
 - Fetches random articles from API  
 - Integrates with favorites and history  
-- Handles offline mode gracefully  
+- Handles offline mode gracefully
 
+## SQLite Data Model
+* **Favorites** stored as JSON objects in SQLite.
+* **History** Each article is stored with an added date field, then grouped by date in the UI.
+* **Search History** stored as a single JSON array limited to the 20 most recent search terms.
+
+### API Endpoints Used
+The app requires a backend with the following endpoints:
+```
+GET article/random/3
+GET search/:keyword/filter
+GET def
+```
