@@ -1,0 +1,38 @@
+name: Expo Application Services Build Continous Integration (APK only)
+
+on:
+  # Allows you to start the workflow manually from GitHub > Actions > Run workflow
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: "EAS build profile (development, preview, production)"
+        required: true
+        default: "production"
+
+jobs:
+  build-android:
+    name: Build Android APK
+    runs-on: ubuntu-latest   # GitHub server environment
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
+      - name: Install dependencies
+        run: npm install
+      # Authenticate Expo (using GitHub Secrets → EXPO_TOKEN)
+      - name: Authenticate with Expo
+        run: eas login --token ${{ secrets.EXPO_TOKEN }}
+      #    --platform android: ensures APK/AAB only
+      #    --profile: uses build profile from eas.json
+      - name: Run EAS Android APK build
+        run: |
+          eas build \
+            --platform android \
+            --profile ${{ github.event.inputs.profile }} \
+            --non-interactive \
+            --local=false
