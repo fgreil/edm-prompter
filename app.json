@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#6A1B9A"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.fgreil.edmprompter"
@@ -21,15 +23,21 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.yourname.edmprompter"
+      "package": "com.fgreil.edmprompter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [],   
+    "plugins": [],
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
-    "sdkVersion": "50.0.0"
+    "sdkVersion": "50.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "989a54c0-f770-4ef0-88cb-945e0a335575"
+      }
+    },
+    "owner": "fgreil"
   }
 }
