@@ -1,7 +1,6 @@
 // src/navigation/screens/ArticleRender/styles.js
 
 import { StyleSheet } from "react-native";
-import globals from "../../../lib/globals";
 import * as colors from "../../../utils/colors";
 
 export default StyleSheet.create({
