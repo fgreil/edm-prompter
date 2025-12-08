@@ -1,49 +1,35 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, { useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
+import * as SplashScreen from "expo-splash-screen";
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+// SQLite init
+import { initDatabase } from "./src/database/database";
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+// Root Navigation
+import AppNavigator from "./src/navigation/AppNavigator";
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
+// Prevent Expo from auto-hiding splash until DB is ready
+SplashScreen.preventAutoHideAsync();
+
+export default function App() {
+  useEffect(() => {
+    async function prepare() {
+      try {
+        // Initialize SQLite tables
+        await initDatabase();
+      } catch (e) {
+        console.warn("DB init failed", e);
+      } finally {
+        SplashScreen.hideAsync();
+      }
+    }
+    prepare();
+  }, []);
+
+  return (
+    <>
+      <StatusBar style="light" />
+      <AppNavigator />
+    </>
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
