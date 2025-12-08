@@ -4,23 +4,18 @@
     "slug": "edm-prompter",
     "version": "0.1.0",
     "orientation": "portrait",
-
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#6A1B9A"
     },
-
     "assetBundlePatterns": ["**/*"],
-
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.edmprompter"
+      "bundleIdentifier": "com.fgreil.edmprompter"
     },
-
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -28,23 +23,13 @@
       },
       "package": "com.yourname.edmprompter"
     },
-
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
-    "cli": {
-      "appVersionSource": "local"
-    },
-
-    "extra": {
-      "eas": {
-        "projectId": "YOUR_REAL_EAS_PROJECT_ID"
-      }
-    },
-
+    "plugins": [],   
     "runtimeVersion": {
       "policy": "sdkVersion"
-    }
+    },
+    "sdkVersion": "50.0.0"
   }
 }
