@@ -13,8 +13,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
-
-import colors from '../utils/colors';
+import * as colors from "../../../utils/colors";
 
 // Screens
 import SplashScreen from './screens/Splash/SplashScreen';
