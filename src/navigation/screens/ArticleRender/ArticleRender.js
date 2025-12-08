@@ -141,7 +141,7 @@ export default function ArticleRender({ route, navigation }) {
             source={
               article.image
                 ? { uri: article.image }
-                : require("../../../images/placeholder.png")
+                : require("../../../../../assets/splash_icon.png")
             }
             style={[styles.imageStyle, { marginBottom: 15 }]}
           />
