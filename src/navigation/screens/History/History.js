@@ -118,7 +118,7 @@ export default function History({ navigation }) {
                     source={
                       article.image
                         ? { uri: article.image }
-                        : require("../../../images/placeholder.png")
+                        : require("../../../../../assets/splash_icon.png")
                     }
                   />
                   <Text style={styles.titleTextStyle}>{article.title}</Text>
