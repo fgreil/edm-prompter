@@ -5,63 +5,57 @@ import * as colors from "../../../utils/colors";
 
 export default StyleSheet.create({
   containerStyle: {
-    flex: 1,
     paddingHorizontal: 20,
-    backgroundColor: colors.white,
+    paddingBottom: 0
   },
 
-  // Title and section headers
+  imageStyle: {
+    width: "100%",
+    height: "100%"
+  },
+
   headerTextStyle: {
-    fontSize: globals.header_fontsize,
-    paddingVertical: 10,
-    color: colors.purple,
-    fontWeight: "600",
-  },
-
-  // Teaser text above properties
-  teaserStyle: {
-    fontSize: 16,
-    color: colors.black,
+    fontSize: 20,        // previously globals.header_fontsize
     paddingBottom: 10,
+    color: colors.purple
   },
 
-  // Image wrapper with fixed height
+  descriptionViewStyle: {
+    paddingBottom: 10
+  },
+
+  propertiesStyle: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 6
+  },
+
+  tableStyles: {
+    marginVertical: 10
+  },
+
   imageViewStyle: {
     width: "100%",
     height: 250,
-    marginBottom: 10,
+    marginBottom: 10
   },
 
-  // Image fills wrapper
-  imageStyle: {
-    width: "100%",
-    height: "100%",
-  },
-
-  // Markdown paragraphs
-  descriptionViewStyle: {
-    paddingVertical: 6,
-  },
-
-  // Property section container
-  tableStyles: {
-    marginVertical: 15,
-  },
-
-  // Each property line
-  propertiesStyle: {
-    marginVertical: 10,
-  },
-
-  // Property value text
-  descriptionTextStyle: {
-    fontSize: 15,
-    color: colors.black,
-    paddingTop: 4,
-  },
-
-  // Header icon (favorite button)
   menuIcon: {
     marginRight: 10,
+    marginLeft: 10,
+    backgroundColor: colors.purple
   },
+
+  teaserStyle: {
+    flex: 1,
+    color: colors.black,
+    fontSize: 16,
+    lineHeight: 22
+  },
+
+  descriptionTextStyle: {
+    fontSize: 15,
+    color: colors.black
+  }
 });
