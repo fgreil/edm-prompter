@@ -19,7 +19,7 @@ export default function SplashScreen({ navigation }) {
 
       <Image
         resizeMode="contain"
-        source={require("../../../images/splash_icon.png")}
+        source={require("../../../../../assets/splash_icon.png")}
         style={styles.imageStyle}
       />
     </View>
