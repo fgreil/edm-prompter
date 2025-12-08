@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
-import * as SplashScreen from "expo-splash-screen";
 
 // SQLite init
 import { initDatabase } from "./src/database/database";
