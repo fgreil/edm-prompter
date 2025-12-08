@@ -1,26 +1,37 @@
 {
+  // EAS CLI version requirement
   "cli": {
     "version": ">= 3.0.0"
   },
+
+  // Build profiles that EAS uses
   "build": {
+    // For local testing or internal installs
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"   // Generate APK
+      }
     },
+
+    // For internal previews
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"   // Also APK
+      }
     },
+
+    // Production build for Play Store or manual distribution
     "production": {
       "autoIncrement": true,
-      "distribution": "store",
       "android": {
-        "buildType": "apk"
-      },
-      "ios": {
-        "simulator": false
+        "buildType": "apk"   // IMPORTANT: build APK instead of AAB
       }
     }
   },
+
   "submit": {
     "production": {}
   }
