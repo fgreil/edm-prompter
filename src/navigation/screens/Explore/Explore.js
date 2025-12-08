@@ -14,7 +14,7 @@ import NetInfo from "@react-native-community/netinfo";
 import styles from "./styles";
 import * as colors from "../../../utils/colors";
 import Offline from "../Offline/Offline";
-import Loader from "../../Loader/Loader";
+import Loader from "../Loader/Loader";
 import callApi from "../../../lib/apicaller";
 
 // SQLite services
