@@ -76,6 +76,9 @@ server {
     listen 80;
     server_name xx.xkcd.eu;
 
+    access_log /var/log/nginx/timeapi_access.log;
+    error_log /var/log/nginx/timeapi_error.log;
+
     location /time {
         proxy_pass http://127.0.0.1:5000/time;
         proxy_set_header Host $host;
@@ -106,18 +109,13 @@ sudo supervisorctl status timeapi
 ## Step 7: Test
 
 ```bash
-curl http://xx.xkcd.eu/time
-```
-
-## Optional: Add SSL
-
-```bash
-sudo apt install certbot python3-certbot-nginx
-sudo certbot --nginx -d xx.xkcd.eu
+curl http://xx.test.eu/time
 ```
 
 ## Useful Commands
 
-- View logs: `tail -f /var/log/timeapi.err.log`
+- View Flask logs: `tail -f /var/log/timeapi.err.log`
+- View Nginx access logs: `tail -f /var/log/nginx/timeapi_access.log`
+- View Nginx error logs: `tail -f /var/log/nginx/timeapi_error.log`
 - Restart: `sudo supervisorctl restart timeapi`
 - Stop: `sudo supervisorctl stop timeapi`
