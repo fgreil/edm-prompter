@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700" font-family="Arial, sans-serif">
+  <defs>
+    <!-- Arrowhead for flows -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1400" height="700" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="30" y="40" font-size="26" font-weight="bold">EDM Genre Relationships – Sankey-style Overview</text>
+  <text x="30" y="65" font-size="14" fill="#555">Left → right ≈ earlier → later. Flows show main stylistic influences between genres.</text>
+
+  <!-- =========================
+       NODE POSITIONS (CENTERS)
+       =========================
+       Ambient:     (150, 200)
+       Electro:     (150, 280)
+       House:       (450, 200)
+       Techno:      (450, 280)
+       Breakbeat:   (450, 360)
+       Trance:      (800, 200)
+       Drum & Bass: (800, 280)
+       Hardstyle:   (800, 360)
+       Dubstep:     (1150, 200)
+       Trap:        (1150, 280)
+       Future Bass: (1150, 360)
+       Bass House:  (1150, 440)
+  -->
+
+  <!-- =========================
+       FLOWS (EDGES)
+       ========================= -->
+
+  <!-- Ambient → Trance -->
+  <path d="M260 200 C 340 200, 710 200, 690 200"
+        fill="none" stroke="#7a3ea1" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Electro → House -->
+  <path d="M260 280 C 340 280, 370 200, 340 200"
+        fill="none" stroke="#aa7621" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Electro → Techno -->
+  <path d="M260 280 C 340 280, 370 280, 340 280"
+        fill="none" stroke="#2e8b57" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Electro → Breakbeat -->
+  <path d="M260 280 C 340 320, 370 360, 340 360"
+        fill="none" stroke="#b53e6a" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- House → Techno -->
+  <path d="M560 200 C 620 220, 380 280, 540 280"
+        fill="none" stroke="#2e8b57" stroke-width="3" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- House → Trance -->
+  <path d="M560 200 C 620 200, 690 200, 690 200"
+        fill="none" stroke="#7a3ea1" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- House → Bass House -->
+  <path d="M560 200 C 700 260, 1010 440, 1040 440"
+        fill="none" stroke="#3e8ab5" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Techno → Trance -->
+  <path d="M560 280 C 640 260, 700 200, 690 200"
+        fill="none" stroke="#7a3ea1" stroke-width="3" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Techno → Hardstyle -->
+  <path d="M560 280 C 660 320, 700 360, 690 360"
+        fill="none" stroke="#b53e3e" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Breakbeat → Drum & Bass -->
+  <path d="M560 360 C 660 340, 700 280, 690 280"
+        fill="none" stroke="#b53e6a" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Breakbeat → Dubstep -->
+  <path d="M560 360 C 740 380, 1040 200, 1040 200"
+        fill="none" stroke="#4a4ab5" stroke-width="3" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Drum & Bass → Dubstep -->
+  <path d="M910 280 C 1000 260, 1060 200, 1040 200"
+        fill="none" stroke="#4a4ab5" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Trance → Hardstyle -->
+  <path d="M910 200 C 950 240, 900 360, 900 360"
+        fill="none" stroke="#b53e3e" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Dubstep → Trap -->
+  <path d="M1260 200 C 1300 220, 1220 280, 1240 280"
+        fill="none" stroke="#b53e3e" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Dubstep → Future Bass -->
+  <path d="M1260 200 C 1320 240, 1220 360, 1240 360"
+        fill="none" stroke="#3e8ab5" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Dubstep → Bass House -->
+  <path d="M1260 200 C 1340 300, 1220 440, 1240 440"
+        fill="none" stroke="#3e8ab5" stroke-width="3" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Trap → Future Bass -->
+  <path d="M1260 280 C 1300 300, 1220 360, 1240 360"
+        fill="none" stroke="#3e8ab5" stroke-width="4" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- House → Drum & Bass (lighter, secondary influence) -->
+  <path d="M560 200 C 660 220, 700 280, 690 280"
+        fill="none" stroke="#b53e6a" stroke-width="2" opacity="0.4" marker-end="url(#arrow)"/>
+
+  <!-- Ambient → Future Bass (atmospheric/texture influence, light) -->
+  <path d="M260 200 C 500 140, 1000 360, 1040 360"
+        fill="none" stroke="#3e8ab5" stroke-width="2" opacity="0.3" marker-end="url(#arrow)"/>
+
+  <!-- =========================
+       GENRE NODES (BOXES)
+       ========================= -->
+
+  <!-- Helper function style: width=220, height=50 -->
+
+  <!-- Ambient -->
+  <rect x="40" y="175" width="220" height="50" rx="6" ry="6" fill="#d9e6f2" stroke="#4a6a8a" stroke-width="2"/>
+  <text x="50" y="200" font-size="16" font-weight="bold">Ambient</text>
+  <text x="50" y="218" font-size="12" fill="#333">Origin: UK / Europe</text>
+
+  <!-- Electro -->
+  <rect x="40" y="255" width="220" height="50" rx="6" ry="6" fill="#f7f4ff" stroke="#5d4ab5" stroke-width="2"/>
+  <text x="50" y="280" font-size="16" font-weight="bold">Electro</text>
+  <text x="50" y="298" font-size="12" fill="#333">Origin: USA</text>
+
+  <!-- House -->
+  <rect x="340" y="175" width="220" height="50" rx="6" ry="6" fill="#ffe6cc" stroke="#aa7621" stroke-width="2"/>
+  <text x="350" y="200" font-size="16" font-weight="bold">House</text>
+  <text x="350" y="218" font-size="12" fill="#333">Origin: Chicago, USA</text>
+
+  <!-- Techno -->
+  <rect x="340" y="255" width="220" height="50" rx="6" ry="6" fill="#e6ffe6" stroke="#2e8b57" stroke-width="2"/>
+  <text x="350" y="280" font-size="16" font-weight="bold">Techno</text>
+  <text x="350" y="298" font-size="12" fill="#333">Origin: Detroit, USA</text>
+
+  <!-- Breakbeat -->
+  <rect x="340" y="335" width="220" height="50" rx="6" ry="6" fill="#ffe6f0" stroke="#b53e6a" stroke-width="2"/>
+  <text x="350" y="360" font-size="16" font-weight="bold">Breakbeat</text>
+  <text x="350" y="378" font-size="12" fill="#333">Origin: UK</text>
+
+  <!-- Trance -->
+  <rect x="690" y="175" width="220" height="50" rx="6" ry="6" fill="#f5e6ff" stroke="#7a3ea1" stroke-width="2"/>
+  <text x="700" y="200" font-size="16" font-weight="bold">Trance</text>
+  <text x="700" y="218" font-size="12" fill="#333">Origin: Germany</text>
+
+  <!-- Drum & Bass -->
+  <rect x="690" y="255" width="220" height="50" rx="6" ry="6" fill="#ffd9e6" stroke="#b53e6a" stroke-width="2"/>
+  <text x="700" y="280" font-size="16" font-weight="bold">Drum &amp; Bass</text>
+  <text x="700" y="298" font-size="12" fill="#333">Origin: UK</text>
+
+  <!-- Hardstyle -->
+  <rect x="690" y="335" width="220" height="50" rx="6" ry="6" fill="#ffe6dd" stroke="#b53e3e" stroke-width="2"/>
+  <text x="700" y="360" font-size="16" font-weight="bold">Hardstyle</text>
+  <text x="700" y="378" font-size="12" fill="#333">Origin: Netherlands</text>
+
+  <!-- Dubstep -->
+  <rect x="1040" y="175" width="220" height="50" rx="6" ry="6" fill="#d9d9ff" stroke="#4a4ab5" stroke-width="2"/>
+  <text x="1050" y="200" font-size="16" font-weight="bold">Dubstep</text>
+  <text x="1050" y="218" font-size="12" fill="#333">Origin: London, UK</text>
+
+  <!-- Trap (EDM) -->
+  <rect x="1040" y="255" width="220" height="50" rx="6" ry="6" fill="#ffe6e6" stroke="#b53e3e" stroke-width="2"/>
+  <text x="1050" y="280" font-size="16" font-weight="bold">Trap (EDM)</text>
+  <text x="1050" y="298" font-size="12" fill="#333">Origin: Southern USA / Global</text>
+
+  <!-- Future Bass -->
+  <rect x="1040" y="335" width="220" height="50" rx="6" ry="6" fill="#e6faff" stroke="#3e8ab5" stroke-width="2"/>
+  <text x="1050" y="360" font-size="16" font-weight="bold">Future Bass</text>
+  <text x="1050" y="378" font-size="12" fill="#333">Origin: USA / UK / Japan</text>
+
+  <!-- Bass House -->
+  <rect x="1040" y="415" width="220" height="50" rx="6" ry="6" fill="#e6f2ff" stroke="#3e8ab5" stroke-width="2"/>
+  <text x="1050" y="440" font-size="16" font-weight="bold">Bass House</text>
+  <text x="1050" y="458" font-size="12" fill="#333">Origin: UK</text>
+
+</svg>
