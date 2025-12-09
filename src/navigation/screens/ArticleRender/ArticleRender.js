@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 import { MaterialIcons, SimpleLineIcons } from "@expo/vector-icons";
-import RNMarkdownFormatter from "../../RNMarkdownFormatter";
+import MarkdownFormatter from "../../../components/MarkdownFormatter/MarkdownFormatter";
 import styles from "./styles";
 import * as colors from "../../../utils/colors";
 
