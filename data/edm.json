@@ -4,169 +4,865 @@
       "id": 1,
       "name": "House",
       "bpm_range": "120-130",
-      "origin": "Chicago, USA",
-      "decade": "1980s",
+      "time_range": "1980-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "The Warehouse", "city": "Chicago"},
+        {"name": "Paradise Garage", "city": "New York"},
+        {"name": "Ministry of Sound", "city": "London"}
+      ],
       "characteristics": [
         "Four-on-the-floor beat",
         "Repetitive 4/4 rhythm",
         "Synthesized basslines",
         "Piano or organ loops"
       ],
-      "subgenres": ["Deep House", "Tech House", "Progressive House", "Electro House"]
+      "subgenres": [
+        "Acid House",
+        "Afro House",
+        "Ambient House",
+        "Balearic Beat",
+        "Ballroom",
+        "Bass House",
+        "Brazilian Bass",
+        "Blog House",
+        "Chicago Hard House",
+        "Chicago House",
+        "Deep House",
+        "Disco House",
+        "Diva House",
+        "Electro House",
+        "Electro Swing",
+        "Eurohouse",
+        "French House",
+        "Funky House",
+        "Future House",
+        "Garage House",
+        "Ghetto House",
+        "Gqom",
+        "Hip House",
+        "Italo House",
+        "Jackin House",
+        "Jazz House",
+        "Kwaito",
+        "Latin House",
+        "Melodic House",
+        "Microhouse",
+        "Moombahcore",
+        "Moombahton",
+        "New Jersey Sound",
+        "Outsider House",
+        "Progressive House",
+        "Soulful House",
+        "Stadium House",
+        "Tech House",
+        "Tribal House",
+        "Tropical House",
+        "Trouse",
+        "UK Hard House"
+      ]
     },
     {
       "id": 2,
       "name": "Techno",
       "bpm_range": "120-150",
-      "origin": "Detroit, USA",
-      "decade": "1980s",
+      "time_range": "1985-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "Berghain", "city": "Berlin"},
+        {"name": "Tresor", "city": "Berlin"},
+        {"name": "The Music Institute", "city": "Detroit"}
+      ],
       "characteristics": [
         "Repetitive instrumental music",
         "Heavy use of drum machines",
         "Futuristic and industrial sound",
         "Minimal vocals"
       ],
-      "subgenres": ["Detroit Techno", "Minimal Techno", "Acid Techno", "Industrial Techno"]
+      "subgenres": [
+        "Acid Techno",
+        "Detroit Techno",
+        "Dub Techno",
+        "Hard Techno",
+        "Industrial Techno",
+        "Minimal Techno",
+        "Schranz",
+        "Tech Trance"
+      ]
     },
     {
       "id": 3,
       "name": "Trance",
       "bpm_range": "125-150",
-      "origin": "Germany",
-      "decade": "1990s",
+      "time_range": "1990-present",
+      "country": "Germany",
+      "major_clubs": [
+        {"name": "Dorian Gray", "city": "Frankfurt"},
+        {"name": "Gatecrasher", "city": "Sheffield"},
+        {"name": "Cream", "city": "Liverpool"}
+      ],
       "characteristics": [
         "Melodic and euphoric",
         "Long build-ups and breakdowns",
         "Layered synth patterns",
         "Emotional atmosphere"
       ],
-      "subgenres": ["Progressive Trance", "Uplifting Trance", "Psychedelic Trance", "Vocal Trance"]
+      "subgenres": [
+        "Acid Trance",
+        "Balearic Trance",
+        "Dream Trance",
+        "Goa Trance",
+        "Hard Trance",
+        "Progressive Trance",
+        "Psychedelic Trance",
+        "Tech Trance",
+        "Uplifting Trance",
+        "Vocal Trance"
+      ]
     },
     {
       "id": 4,
       "name": "Dubstep",
       "bpm_range": "138-142",
-      "origin": "London, UK",
-      "decade": "2000s",
+      "time_range": "2002-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Plastic People", "city": "London"},
+        {"name": "FWD>>", "city": "London"},
+        {"name": "DMZ", "city": "London"}
+      ],
       "characteristics": [
         "Heavy bass and sub-bass",
         "Syncopated rhythms",
         "Wobble bass (LFO modulation)",
         "Half-time drum patterns"
       ],
-      "subgenres": ["Brostep", "Riddim", "Deep Dubstep", "Drumstep"]
+      "subgenres": [
+        "Brostep",
+        "Deep Dubstep",
+        "Drumstep",
+        "Riddim",
+        "Tearout"
+      ]
     },
     {
       "id": 5,
       "name": "Drum and Bass",
       "bpm_range": "160-180",
-      "origin": "UK",
-      "decade": "1990s",
+      "time_range": "1992-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Fabric", "city": "London"},
+        {"name": "Movement", "city": "Bristol"},
+        {"name": "Renegade Hardware", "city": "London"}
+      ],
       "characteristics": [
         "Fast breakbeats",
         "Heavy bass and sub-bass lines",
         "Complex drum programming",
         "High energy"
       ],
-      "subgenres": ["Liquid DnB", "Neurofunk", "Jump Up", "Jungle"]
+      "subgenres": [
+        "Darkstep",
+        "Drumfunk",
+        "Hardstep",
+        "Jump Up",
+        "Liquid DnB",
+        "Neurofunk",
+        "Sambass",
+        "Techstep"
+      ]
     },
     {
       "id": 6,
+      "name": "Jungle",
+      "bpm_range": "160-180",
+      "time_range": "1990-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "AWOL", "city": "London"},
+        {"name": "Roast", "city": "London"},
+        {"name": "Telepathy", "city": "London"}
+      ],
+      "characteristics": [
+        "Amen break samples",
+        "Reggae and dancehall influences",
+        "Fast chopped breakbeats",
+        "Heavy bass"
+      ],
+      "subgenres": [
+        "Ragga Jungle",
+        "Darkside Jungle",
+        "Intelligent Jungle"
+      ]
+    },
+    {
+      "id": 7,
       "name": "Trap",
       "bpm_range": "130-170",
-      "origin": "Southern USA",
-      "decade": "2010s",
+      "time_range": "2010-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "Echostage", "city": "Washington DC"},
+        {"name": "Exchange LA", "city": "Los Angeles"},
+        {"name": "Avant Gardner", "city": "New York"}
+      ],
       "characteristics": [
         "808 drum machine",
         "Hi-hat rolls and triplets",
         "Heavy sub-bass",
         "Aggressive sound design"
       ],
-      "subgenres": ["Festival Trap", "Hybrid Trap", "Future Trap"]
+      "subgenres": [
+        "Festival Trap",
+        "Future Trap",
+        "Hybrid Trap",
+        "Latin Trap"
+      ]
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Future Bass",
       "bpm_range": "130-160",
-      "origin": "USA/UK",
-      "decade": "2010s",
+      "time_range": "2012-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "Bill Graham Civic Auditorium", "city": "San Francisco"},
+        {"name": "Red Rocks Amphitheatre", "city": "Denver"},
+        {"name": "Brooklyn Mirage", "city": "New York"}
+      ],
       "characteristics": [
         "Modulated synthesizers",
         "Bright, lush chords",
         "Pitched vocal chops",
         "Melodic and emotional"
       ],
-      "subgenres": ["Kawaii Future Bass", "Melodic Future Bass"]
+      "subgenres": [
+        "Kawaii Future Bass",
+        "Melodic Future Bass",
+        "Chill Future Bass"
+      ]
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Hardstyle",
       "bpm_range": "150-160",
-      "origin": "Netherlands",
-      "decade": "2000s",
+      "time_range": "1999-present",
+      "country": "Netherlands",
+      "major_clubs": [
+        {"name": "Defqon.1", "city": "Biddinghuizen"},
+        {"name": "Qlimax", "city": "Arnhem"},
+        {"name": "Freaqshow", "city": "Eindhoven"}
+      ],
       "characteristics": [
         "Distorted kick drums",
         "Euphoric melodies",
         "Reverse bass",
         "Energetic and intense"
       ],
-      "subgenres": ["Rawstyle", "Euphoric Hardstyle", "Hardcore"]
-    },
-    {
-      "id": 9,
-      "name": "Electro",
-      "bpm_range": "120-135",
-      "origin": "USA",
-      "decade": "1980s",
-      "characteristics": [
-        "Funk-influenced",
-        "Robotic vocals (vocoders)",
-        "Roland TR-808 drum machine",
-        "Synthesizer bass"
-      ],
-      "subgenres": ["Electro House", "Electro Funk", "Fidget House"]
+      "subgenres": [
+        "Euphoric Hardstyle",
+        "Rawstyle",
+        "Uptempo Hardcore",
+        "Nu-Style"
+      ]
     },
     {
       "id": 10,
+      "name": "Hardcore",
+      "bpm_range": "160-200+",
+      "time_range": "1990-present",
+      "country": "Netherlands",
+      "major_clubs": [
+        {"name": "Thunderdome", "city": "Utrecht"},
+        {"name": "Masters of Hardcore", "city": "Arnhem"},
+        {"name": "Ground Zero", "city": "Rotterdam"}
+      ],
+      "characteristics": [
+        "Very fast tempo",
+        "Distorted kicks",
+        "Aggressive sound",
+        "Industrial influences"
+      ],
+      "subgenres": [
+        "Breakcore",
+        "Crossbreed",
+        "Darkcore",
+        "Frenchcore",
+        "Gabber",
+        "Happy Hardcore",
+        "Industrial Hardcore",
+        "Mainstream Hardcore",
+        "Speedcore",
+        "Terrorcore",
+        "UK Hardcore"
+      ]
+    },
+    {
+      "id": 11,
       "name": "Breakbeat",
       "bpm_range": "110-150",
-      "origin": "UK",
-      "decade": "1990s",
+      "time_range": "1990-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "End", "city": "London"},
+        {"name": "Fabric", "city": "London"},
+        {"name": "Heaven", "city": "London"}
+      ],
       "characteristics": [
         "Syncopated breakbeats",
         "Sampled drum loops",
         "Funky bass lines",
         "Hip-hop influenced"
       ],
-      "subgenres": ["Big Beat", "Nu Skool Breaks", "Progressive Breaks"]
+      "subgenres": [
+        "Big Beat",
+        "Nu Skool Breaks",
+        "Progressive Breaks",
+        "Acid Breaks",
+        "Florida Breaks"
+      ]
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Ambient",
       "bpm_range": "60-90",
-      "origin": "UK",
-      "decade": "1970s",
+      "time_range": "1970-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Fridge", "city": "London"},
+        {"name": "The Hacienda", "city": "Manchester"},
+        {"name": "Berghain", "city": "Berlin"}
+      ],
       "characteristics": [
         "Atmospheric soundscapes",
         "Minimal rhythm",
         "Textural and ethereal",
         "Relaxing and meditative"
       ],
-      "subgenres": ["Dark Ambient", "Ambient House", "Space Ambient"]
+      "subgenres": [
+        "Ambient Dub",
+        "Ambient House",
+        "Dark Ambient",
+        "Drone",
+        "Illbient",
+        "Psybient",
+        "Space Ambient"
+      ]
     },
     {
-      "id": 12,
-      "name": "Bass House",
-      "bpm_range": "125-130",
-      "origin": "UK",
-      "decade": "2010s",
-      "characteristics": [
-        "Heavy bass drops",
-        "Four-on-the-floor beat",
-        "Wobbling basslines",
-        "Club-oriented"
+      "id": 13,
+      "name": "Disco",
+      "bpm_range": "110-130",
+      "time_range": "1970-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "Studio 54", "city": "New York"},
+        {"name": "Paradise Garage", "city": "New York"},
+        {"name": "The Loft", "city": "New York"}
       ],
-      "subgenres": ["UK Bass", "G-House"]
+      "characteristics": [
+        "Four-on-the-floor beat",
+        "Syncopated basslines",
+        "String sections",
+        "Orchestral arrangements"
+      ],
+      "subgenres": [
+        "Disco House",
+        "Euro Disco",
+        "Italo Disco",
+        "Nu-Disco",
+        "Space Disco"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Electro",
+      "bpm_range": "120-135",
+      "time_range": "1980-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "Roxy NYC", "city": "New York"},
+        {"name": "The Music Box", "city": "Chicago"},
+        {"name": "Rex Club", "city": "Paris"}
+      ],
+      "characteristics": [
+        "Funk-influenced",
+        "Robotic vocals (vocoders)",
+        "Roland TR-808 drum machine",
+        "Synthesizer bass"
+      ],
+      "subgenres": [
+        "Electro Funk",
+        "Electro House",
+        "Electroclash",
+        "Fidget House"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "UK Garage",
+      "bpm_range": "130-135",
+      "time_range": "1993-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Ministry of Sound", "city": "London"},
+        {"name": "Twice as Nice", "city": "London"},
+        {"name": "Pure Silk", "city": "London"}
+      ],
+      "characteristics": [
+        "Shuffled rhythms",
+        "Syncopated hi-hats",
+        "R&B influences",
+        "Pitched vocals"
+      ],
+      "subgenres": [
+        "2-Step",
+        "Bassline",
+        "Dubstep",
+        "Future Garage",
+        "Grime",
+        "Speed Garage"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Grime",
+      "bpm_range": "140",
+      "time_range": "2000-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Rhythm Division", "city": "London"},
+        {"name": "Sidewinder", "city": "London"},
+        {"name": "Deja Vu FM", "city": "London"}
+      ],
+      "characteristics": [
+        "Aggressive MCs",
+        "Electronic beats",
+        "Dark atmospheres",
+        "UK rap influence"
+      ],
+      "subgenres": [
+        "Eski Beat",
+        "Sublow",
+        "Rhythm and Grime"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "IDM (Intelligent Dance Music)",
+      "bpm_range": "Variable",
+      "time_range": "1991-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Warp Records Events", "city": "Sheffield"},
+        {"name": "Sonar Festival", "city": "Barcelona"},
+        {"name": "Mutek", "city": "Montreal"}
+      ],
+      "characteristics": [
+        "Complex rhythms",
+        "Experimental sound design",
+        "Cerebral and intricate",
+        "Non-dance floor oriented"
+      ],
+      "subgenres": [
+        "Braindance",
+        "Drill and Bass",
+        "Glitch"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Industrial",
+      "bpm_range": "120-150",
+      "time_range": "1975-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Slimelight", "city": "London"},
+        {"name": "Neo", "city": "Chicago"},
+        {"name": "Batcave", "city": "London"}
+      ],
+      "characteristics": [
+        "Harsh mechanical sounds",
+        "Distorted vocals",
+        "Aggressive aesthetics",
+        "Dark atmosphere"
+      ],
+      "subgenres": [
+        "EBM (Electronic Body Music)",
+        "Aggrotech",
+        "Dark Electro",
+        "Industrial Techno",
+        "Power Electronics",
+        "Rhythmic Noise"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Downtempo",
+      "bpm_range": "80-110",
+      "time_range": "1990-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Blue Note", "city": "London"},
+        {"name": "Bar 13", "city": "London"},
+        {"name": "Café del Mar", "city": "Ibiza"}
+      ],
+      "characteristics": [
+        "Relaxed tempo",
+        "Atmospheric",
+        "Chill-out vibe",
+        "Jazz and funk influences"
+      ],
+      "subgenres": [
+        "Chillout",
+        "Lo-fi Hip Hop",
+        "Trip Hop",
+        "Acid Jazz"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Bass Music",
+      "bpm_range": "130-150",
+      "time_range": "2005-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Fabric", "city": "London"},
+        {"name": "Corsica Studios", "city": "London"},
+        {"name": "Sub Club", "city": "Glasgow"}
+      ],
+      "characteristics": [
+        "Focus on bass frequencies",
+        "Heavy sub-bass",
+        "Experimental sound design",
+        "Various tempo influences"
+      ],
+      "subgenres": [
+        "Future Bass",
+        "Trap",
+        "Dubstep",
+        "Juke",
+        "Footwork",
+        "Jersey Club"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Vaporwave",
+      "bpm_range": "60-90",
+      "time_range": "2010-present",
+      "country": "Internet/USA",
+      "major_clubs": [
+        {"name": "Online Platforms", "city": "N/A"},
+        {"name": "Art Galleries", "city": "Various"},
+        {"name": "Underground Events", "city": "Various"}
+      ],
+      "characteristics": [
+        "Slowed-down samples",
+        "80s/90s nostalgia",
+        "Surreal aesthetics",
+        "Internet culture references"
+      ],
+      "subgenres": [
+        "Future Funk",
+        "Mallsoft",
+        "Simpsonwave",
+        "Hardvapour"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Synthwave",
+      "bpm_range": "100-130",
+      "time_range": "2000-present",
+      "country": "France/USA",
+      "major_clubs": [
+        {"name": "Folies Pigalle", "city": "Paris"},
+        {"name": "The Echo", "city": "Los Angeles"},
+        {"name": "Elsewhere", "city": "New York"}
+      ],
+      "characteristics": [
+        "1980s nostalgia",
+        "Retro synthesizers",
+        "Cinematic atmosphere",
+        "Outrun aesthetics"
+      ],
+      "subgenres": [
+        "Outrun",
+        "Darksynth",
+        "Dreamwave",
+        "Cyberpunk"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Footwork",
+      "bpm_range": "150-170",
+      "time_range": "1990-present",
+      "country": "USA",
+      "major_clubs": [
+        {"name": "The Shrine", "city": "Chicago"},
+        {"name": "Smart Bar", "city": "Chicago"},
+        {"name": "Corsica Studios", "city": "London"}
+      ],
+      "characteristics": [
+        "Rapid-fire percussion",
+        "Syncopated rhythms",
+        "Sample-based production",
+        "Dance battle origins"
+      ],
+      "subgenres": [
+        "Juke",
+        "Ghetto House"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Psytrance",
+      "bpm_range": "135-150",
+      "time_range": "1994-present",
+      "country": "Israel/India",
+      "major_clubs": [
+        {"name": "Hilltop", "city": "Goa"},
+        {"name": "Boom Festival", "city": "Portugal"},
+        {"name": "Ozora Festival", "city": "Hungary"}
+      ],
+      "characteristics": [
+        "Hypnotic rhythms",
+        "Layered melodies",
+        "Trippy sound design",
+        "Spiritual atmosphere"
+      ],
+      "subgenres": [
+        "Full-On",
+        "Dark Psy",
+        "Progressive Psytrance",
+        "Suomi Saundi",
+        "Psybreaks",
+        "Psychill"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Glitch Hop",
+      "bpm_range": "90-115",
+      "time_range": "2000-present",
+      "country": "USA/UK",
+      "major_clubs": [
+        {"name": "The Black Box", "city": "Denver"},
+        {"name": "Neumos", "city": "Seattle"},
+        {"name": "Fabric", "city": "London"}
+      ],
+      "characteristics": [
+        "Glitchy sound effects",
+        "Hip-hop influences",
+        "Complex rhythms",
+        "Heavy bass"
+      ],
+      "subgenres": [
+        "Neurohop",
+        "Wonky"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Chiptune",
+      "bpm_range": "Variable",
+      "time_range": "1980-present",
+      "country": "Japan/USA",
+      "major_clubs": [
+        {"name": "Blip Festival", "city": "New York"},
+        {"name": "MAGFest", "city": "Washington DC"},
+        {"name": "8static Festival", "city": "Various"}
+      ],
+      "characteristics": [
+        "8-bit and 16-bit sounds",
+        "Video game aesthetics",
+        "Retro hardware",
+        "Nostalgic melodies"
+      ],
+      "subgenres": [
+        "Bitpop",
+        "Nanoloop",
+        "Micromusic"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Hard Dance",
+      "bpm_range": "145-180",
+      "time_range": "1992-present",
+      "country": "UK/Netherlands",
+      "major_clubs": [
+        {"name": "Godskitchen", "city": "Birmingham"},
+        {"name": "Tidy Weekender", "city": "Various UK"},
+        {"name": "Q-dance Events", "city": "Netherlands"}
+      ],
+      "characteristics": [
+        "Fast tempo",
+        "Hard kicks",
+        "Euphoric melodies",
+        "High energy"
+      ],
+      "subgenres": [
+        "Hard House",
+        "Hard Trance",
+        "Hardstyle",
+        "Hardcore"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Electronica",
+      "bpm_range": "Variable",
+      "time_range": "1980-present",
+      "country": "UK/USA",
+      "major_clubs": [
+        {"name": "Ministry of Sound", "city": "London"},
+        {"name": "Output", "city": "New York"},
+        {"name": "Smart Bar", "city": "Chicago"}
+      ],
+      "characteristics": [
+        "Broad umbrella term",
+        "Electronic instrumentation",
+        "Experimental tendencies",
+        "Non-specific genre"
+      ],
+      "subgenres": [
+        "Folktronica",
+        "Live Electronic",
+        "Nu Jazz",
+        "Progressive Electronic"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Dancehall Pop",
+      "bpm_range": "90-110",
+      "time_range": "2010-present",
+      "country": "Jamaica/USA",
+      "major_clubs": [
+        {"name": "Quad", "city": "Kingston"},
+        {"name": "The Loft", "city": "New York"},
+        {"name": "Electric Brixton", "city": "London"}
+      ],
+      "characteristics": [
+        "Caribbean rhythms",
+        "Pop production",
+        "Electronic beats",
+        "Reggae influences"
+      ],
+      "subgenres": [
+        "Tropical House",
+        "Moombahton",
+        "Reggaeton"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Ethnic Electronica",
+      "bpm_range": "Variable",
+      "time_range": "1990-present",
+      "country": "Various",
+      "major_clubs": [
+        {"name": "Fabric", "city": "London"},
+        {"name": "Rex Club", "city": "Paris"},
+        {"name": "Club Transmediale", "city": "Berlin"}
+      ],
+      "characteristics": [
+        "Traditional instruments",
+        "Electronic production",
+        "Cultural fusion",
+        "World music elements"
+      ],
+      "subgenres": [
+        "Asian Underground",
+        "Budots",
+        "Changa Tuki",
+        "Denpa Music",
+        "Funk Carioca",
+        "Guaracha",
+        "Merenhouse",
+        "Nortec",
+        "Raboday",
+        "Rara Tech",
+        "Russ Music",
+        "Shamstep",
+        "Tecnocumbia",
+        "Tribal Guarachero",
+        "Worldbeat"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Hauntology",
+      "bpm_range": "70-100",
+      "time_range": "2006-present",
+      "country": "UK",
+      "major_clubs": [
+        {"name": "Cafe OTO", "city": "London"},
+        {"name": "Ghost Box Events", "city": "Various UK"},
+        {"name": "The Shacklewell Arms", "city": "London"}
+      ],
+      "characteristics": [
+        "Nostalgic samples",
+        "Eerie atmosphere",
+        "British cultural references",
+        "Lo-fi aesthetics"
+      ],
+      "subgenres": [
+        "Hypnagogic Pop",
+        "Witch House"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Electronic Rock",
+      "bpm_range": "110-150",
+      "time_range": "1980-present",
+      "country": "UK/USA",
+      "major_clubs": [
+        {"name": "Electric Ballroom", "city": "London"},
+        {"name": "Irving Plaza", "city": "New York"},
+        {"name": "House of Blues", "city": "Los Angeles"}
+      ],
+      "characteristics": [
+        "Rock instrumentation",
+        "Electronic elements",
+        "Guitar and synthesizers",
+        "Live band format"
+      ],
+      "subgenres": [
+        "Synthpop",
+        "New Wave",
+        "Electroclash",
+        "Indietronica"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Dub",
+      "bpm_range": "60-90",
+      "time_range": "1960-present",
+      "country": "Jamaica",
+      "major_clubs": [
+        {"name": "Dub Club", "city": "Los Angeles"},
+        {"name": "Shaka's", "city": "London"},
+        {"name": "Bass Culture", "city": "New York"}
+      ],
+      "characteristics": [
+        "Heavy use of reverb and delay",
+        "Emphasis on bass and drums",
+        "Instrumental versions",
+        "Studio as instrument"
+      ],
+      "subgenres": [
+        "Dub Techno",
+        "Ambient Dub",
+        "Digital Dub",
+        "Steppers"
+      ]
     }
   ]
 }
