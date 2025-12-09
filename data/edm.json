@@ -3,865 +3,1825 @@
     {
       "id": 1,
       "name": "House",
-      "bpm_range": "120-130",
-      "time_range": "1980-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "The Warehouse", "city": "Chicago"},
-        {"name": "Paradise Garage", "city": "New York"},
-        {"name": "Ministry of Sound", "city": "London"}
-      ],
+      "origin": "Chicago, USA",
+      "era": "1983–present",
+      "bpm_range": [120, 130],
+      "time_signature": "4/4",
       "characteristics": [
-        "Four-on-the-floor beat",
-        "Repetitive 4/4 rhythm",
-        "Synthesized basslines",
-        "Piano or organ loops"
+        "Four-on-the-floor kick drum on every beat",
+        "Off-beat open hi-hats",
+        "Funky or soulful basslines",
+        "Use of samples and piano/organ stabs"
+      ],
+      "typical_instruments": [
+        "Roland TR-909 drum machine",
+        "Synth bass (e.g. Juno, TB-303 in some styles)",
+        "Piano/organ stabs",
+        "Vocal samples"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [120, 128],
+        "swing": "medium",
+        "syncopation": "medium",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "medium",
+        "texture_density": "medium",
+        "common_rhythm_patterns": [
+          "Kick on beats 1, 2, 3, 4",
+          "Snare or clap on beats 2 and 4",
+          "Off-beat open hi-hat on the ands"
+        ]
+      },
+      "influences": ["Disco", "Funk", "Soul", "Electro"],
+      "derivatives": ["Deep House", "Tech House", "Progressive House", "Electro House", "Bass House", "Future House"],
+      "timeline": [
+        {
+          "period": "1983–1988",
+          "description": "Early warehouse and club tracks in Chicago with strong disco and funk influence."
+        },
+        {
+          "period": "1989–1999",
+          "description": "Spread to the UK and Europe; development of deep house and progressive house."
+        },
+        {
+          "period": "2000–2010",
+          "description": "Mainstream crossover with vocal house and commercial club music."
+        },
+        {
+          "period": "2011–present",
+          "description": "Festival and pop crossover while underground house remains strong."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Frankie Knuckles",
+          "notable_tracks": ["Your Love", "Baby Wants to Ride"]
+        },
+        {
+          "name": "Marshall Jefferson",
+          "notable_tracks": ["Move Your Body"]
+        }
       ],
       "subgenres": [
-        "Acid House",
-        "Afro House",
-        "Ambient House",
-        "Balearic Beat",
-        "Ballroom",
-        "Bass House",
-        "Brazilian Bass",
-        "Blog House",
-        "Chicago Hard House",
-        "Chicago House",
-        "Deep House",
-        "Disco House",
-        "Diva House",
-        "Electro House",
-        "Electro Swing",
-        "Eurohouse",
-        "French House",
-        "Funky House",
-        "Future House",
-        "Garage House",
-        "Ghetto House",
-        "Gqom",
-        "Hip House",
-        "Italo House",
-        "Jackin House",
-        "Jazz House",
-        "Kwaito",
-        "Latin House",
-        "Melodic House",
-        "Microhouse",
-        "Moombahcore",
-        "Moombahton",
-        "New Jersey Sound",
-        "Outsider House",
-        "Progressive House",
-        "Soulful House",
-        "Stadium House",
-        "Tech House",
-        "Tribal House",
-        "Tropical House",
-        "Trouse",
-        "UK Hard House"
+        {
+          "name": "Deep House",
+          "era": "1985–present",
+          "bpm_range": [118, 124],
+          "characteristics": [
+            "Warm, soulful pads and chords",
+            "Emphasis on groove and atmosphere",
+            "Often jazzy harmony and subtle vocals"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [118, 124],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "high",
+            "texture_density": "medium",
+            "common_rhythm_patterns": [
+              "Laid-back four-on-the-floor kick",
+              "Subtle percussion fills",
+              "Syncopated chord stabs"
+            ]
+          },
+          "artists": [
+            {
+              "name": "Larry Heard (Mr. Fingers)",
+              "notable_tracks": ["Can You Feel It"]
+            },
+            {
+              "name": "Kerri Chandler",
+              "notable_tracks": ["Bar A Thym"]
+            }
+          ]
+        },
+        {
+          "name": "Tech House",
+          "era": "1995–present",
+          "bpm_range": [122, 128],
+          "characteristics": [
+            "Stripped-back grooves",
+            "Minimalistic melodies",
+            "Focus on rhythm and sound design"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [122, 126],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "medium",
+            "common_rhythm_patterns": [
+              "Dry, minimal drum patterns",
+              "Short percussive loops",
+              "Rolling sub-basslines"
+            ]
+          },
+          "artists": [
+            {
+              "name": "Green Velvet",
+              "notable_tracks": ["La La Land"]
+            },
+            {
+              "name": "Fisher",
+              "notable_tracks": ["Losing It"]
+            }
+          ]
+        },
+        {
+          "name": "Progressive House",
+          "era": "1992–present",
+          "bpm_range": [124, 130],
+          "characteristics": [
+            "Long evolving arrangements",
+            "Melodic but less euphoric than trance",
+            "Slow builds and subtle breakdowns"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [124, 128],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "high",
+            "common_rhythm_patterns": [
+              "Steady four-on-the-floor with evolving percussion",
+              "Layered arpeggios and pads"
+            ]
+          },
+          "artists": [
+            {
+              "name": "Sasha",
+              "notable_tracks": ["Xpander"]
+            },
+            {
+              "name": "Eric Prydz",
+              "notable_tracks": ["Opus"]
+            }
+          ]
+        },
+        {
+          "name": "Electro House",
+          "era": "2002–2015 (peak)",
+          "bpm_range": [126, 132],
+          "characteristics": [
+            "Aggressive distorted basslines",
+            "Big-room festival sound",
+            "Emphasis on drops and hooks"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [126, 130],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high",
+            "common_rhythm_patterns": [
+              "Sidechained saw leads with four-on-the-floor",
+              "Snare rolls into drops"
+            ]
+          },
+          "artists": [
+            {
+              "name": "Deadmau5",
+              "notable_tracks": ["Ghosts 'n' Stuff"]
+            },
+            {
+              "name": "Benny Benassi",
+              "notable_tracks": ["Satisfaction"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 2,
       "name": "Techno",
-      "bpm_range": "120-150",
-      "time_range": "1985-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "Berghain", "city": "Berlin"},
-        {"name": "Tresor", "city": "Berlin"},
-        {"name": "The Music Institute", "city": "Detroit"}
-      ],
+      "origin": "Detroit, USA",
+      "era": "1985–present",
+      "bpm_range": [120, 140],
+      "time_signature": "4/4",
       "characteristics": [
-        "Repetitive instrumental music",
-        "Heavy use of drum machines",
-        "Futuristic and industrial sound",
-        "Minimal vocals"
+        "Repetitive, machine-like grooves",
+        "Emphasis on drum machines and synthesizers",
+        "Minimal use of vocals",
+        "Futuristic and industrial timbres"
+      ],
+      "typical_instruments": [
+        "Roland TR-909 and TR-808",
+        "Roland TB-303 (acid styles)",
+        "Analog and digital synthesizers"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [125, 135],
+        "swing": "low",
+        "syncopation": "medium",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "low",
+        "texture_density": "medium",
+        "common_rhythm_patterns": [
+          "Relentless four-on-the-floor kick",
+          "Off-beat hi-hats",
+          "Repetitive synth stabs"
+        ]
+      },
+      "influences": ["Electro", "Synthpop", "Chicago House", "Funk"],
+      "derivatives": ["Minimal Techno", "Acid Techno", "Industrial Techno", "Tech House"],
+      "timeline": [
+        {
+          "period": "1985–1992",
+          "description": "Detroit origin, early European adoption and club circulation."
+        },
+        {
+          "period": "1993–2005",
+          "description": "Harder and industrial forms in Europe; rise of minimal techno."
+        },
+        {
+          "period": "2006–present",
+          "description": "Techno as a global club standard; analog revival and festival stages."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Juan Atkins",
+          "notable_tracks": ["No UFO's"]
+        },
+        {
+          "name": "Jeff Mills",
+          "notable_tracks": ["The Bells"]
+        }
       ],
       "subgenres": [
-        "Acid Techno",
-        "Detroit Techno",
-        "Dub Techno",
-        "Hard Techno",
-        "Industrial Techno",
-        "Minimal Techno",
-        "Schranz",
-        "Tech Trance"
+        {
+          "name": "Detroit Techno",
+          "era": "1985–present",
+          "bpm_range": [120, 132],
+          "characteristics": [
+            "Soulful pads and strings",
+            "Afrofuturist, sci-fi themes",
+            "Blend of funk with mechanical drums"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [122, 130],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Derrick May",
+              "notable_tracks": ["Strings of Life"]
+            },
+            {
+              "name": "Kevin Saunderson",
+              "notable_tracks": ["Big Fun"]
+            }
+          ]
+        },
+        {
+          "name": "Minimal Techno",
+          "era": "1994–present",
+          "bpm_range": [122, 130],
+          "characteristics": [
+            "Sparse, stripped-down arrangements",
+            "Subtle modulation over long timescales",
+            "Focus on groove and micro-variation"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [124, 128],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "low",
+            "texture_density": "low"
+          },
+          "artists": [
+            {
+              "name": "Richie Hawtin (Plastikman)",
+              "notable_tracks": ["Spastik"]
+            },
+            {
+              "name": "Robert Hood",
+              "notable_tracks": ["Minus"]
+            }
+          ]
+        },
+        {
+          "name": "Acid Techno",
+          "era": "1988–present",
+          "bpm_range": [125, 140],
+          "characteristics": [
+            "Squelchy TB-303 basslines",
+            "Psychedelic filter sweeps",
+            "Driving percussion"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [128, 135],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Hardfloor",
+              "notable_tracks": ["Acperience 1"]
+            },
+            {
+              "name": "DJ Misjah & DJ Tim",
+              "notable_tracks": ["Access"]
+            }
+          ]
+        },
+        {
+          "name": "Industrial Techno",
+          "era": "1995–present",
+          "bpm_range": [130, 145],
+          "characteristics": [
+            "Harsh, distorted percussion",
+            "Gritty, dystopian atmospheres",
+            "Influence from industrial and noise music"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [130, 140],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Surgeon",
+              "notable_tracks": ["Magneze"]
+            },
+            {
+              "name": "Ancient Methods",
+              "notable_tracks": ["Knights & Bishops"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 3,
       "name": "Trance",
-      "bpm_range": "125-150",
-      "time_range": "1990-present",
-      "country": "Germany",
-      "major_clubs": [
-        {"name": "Dorian Gray", "city": "Frankfurt"},
-        {"name": "Gatecrasher", "city": "Sheffield"},
-        {"name": "Cream", "city": "Liverpool"}
-      ],
+      "origin": "Germany",
+      "era": "1991–present",
+      "bpm_range": [130, 145],
+      "time_signature": "4/4",
       "characteristics": [
-        "Melodic and euphoric",
+        "Melodic and euphoric synth leads",
         "Long build-ups and breakdowns",
-        "Layered synth patterns",
-        "Emotional atmosphere"
+        "Layered arpeggios and pads",
+        "Emotional, uplifting atmosphere"
+      ],
+      "typical_instruments": [
+        "Supersaw synth leads",
+        "Sidechained pads",
+        "Arpeggiated synths"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [130, 140],
+        "swing": "low",
+        "syncopation": "low",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "medium",
+        "texture_density": "high",
+        "common_rhythm_patterns": [
+          "Straight four-on-the-floor kick",
+          "16th-note hi-hats",
+          "Off-beat bass patterns"
+        ]
+      },
+      "influences": ["Techno", "House", "Ambient", "Goa Trance"],
+      "derivatives": ["Progressive Trance", "Uplifting Trance", "Psychedelic Trance", "Vocal Trance"],
+      "timeline": [
+        {
+          "period": "1991–1996",
+          "description": "Early trance with hypnotic loops and minimal melody."
+        },
+        {
+          "period": "1997–2005",
+          "description": "Anthem and uplifting era with huge melodies and supersaw leads."
+        },
+        {
+          "period": "2006–present",
+          "description": "Progressive and psy-influenced variants, pop-vocal crossover."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Paul van Dyk",
+          "notable_tracks": ["For An Angel"]
+        },
+        {
+          "name": "Tiësto",
+          "notable_tracks": ["Adagio for Strings"]
+        }
       ],
       "subgenres": [
-        "Acid Trance",
-        "Balearic Trance",
-        "Dream Trance",
-        "Goa Trance",
-        "Hard Trance",
-        "Progressive Trance",
-        "Psychedelic Trance",
-        "Tech Trance",
-        "Uplifting Trance",
-        "Vocal Trance"
+        {
+          "name": "Progressive Trance",
+          "era": "1996–present",
+          "bpm_range": [126, 134],
+          "characteristics": [
+            "Slowly evolving arrangements",
+            "Emphasis on atmosphere and groove",
+            "Subtle, long melodic phrases"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [128, 132],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Above & Beyond",
+              "notable_tracks": ["Sun & Moon"]
+            },
+            {
+              "name": "BT",
+              "notable_tracks": ["Flaming June"]
+            }
+          ]
+        },
+        {
+          "name": "Uplifting Trance",
+          "era": "1998–present",
+          "bpm_range": [136, 140],
+          "characteristics": [
+            "Big euphoric melodies",
+            "Long emotional breakdowns",
+            "Supersaw leads and strong sidechain compression"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [136, 140],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Armin van Buuren",
+              "notable_tracks": ["Communication"]
+            },
+            {
+              "name": "Aly & Fila",
+              "notable_tracks": ["We Control the Sunlight"]
+            }
+          ]
+        },
+        {
+          "name": "Psychedelic Trance",
+          "era": "1995–present",
+          "bpm_range": [138, 148],
+          "characteristics": [
+            "Rolling, offbeat basslines",
+            "Psychedelic squelchy leads and FX",
+            "Repetitive, trance-inducing structures"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 145],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Infected Mushroom",
+              "notable_tracks": ["Becoming Insane"]
+            },
+            {
+              "name": "Astrix",
+              "notable_tracks": ["Deep Jungle Walk"]
+            }
+          ]
+        },
+        {
+          "name": "Vocal Trance",
+          "era": "1998–present",
+          "bpm_range": [132, 138],
+          "characteristics": [
+            "Prominent sung vocals",
+            "Pop-style verse/chorus structures",
+            "Emotional, romantic lyrics"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [132, 136],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "OceanLab",
+              "notable_tracks": ["Satellite"]
+            },
+            {
+              "name": "Gareth Emery",
+              "notable_tracks": ["Concrete Angel"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 4,
       "name": "Dubstep",
-      "bpm_range": "138-142",
-      "time_range": "2002-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Plastic People", "city": "London"},
-        {"name": "FWD>>", "city": "London"},
-        {"name": "DMZ", "city": "London"}
-      ],
+      "origin": "London, UK",
+      "era": "1999–present",
+      "bpm_range": [138, 142],
+      "time_signature": "4/4",
       "characteristics": [
-        "Heavy bass and sub-bass",
+        "Half-time drum patterns around 140 BPM",
+        "Heavy sub-bass and wobble basslines",
         "Syncopated rhythms",
-        "Wobble bass (LFO modulation)",
-        "Half-time drum patterns"
+        "Dark, spacious sound design in early forms"
+      ],
+      "typical_instruments": [
+        "Sub-bass synths",
+        "LFO-modulated bass patches",
+        "Drum machines and break samples"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [138, 142],
+        "swing": "medium",
+        "syncopation": "high",
+        "bass_emphasis": "very high",
+        "harmonic_complexity": "low",
+        "texture_density": "medium",
+        "common_rhythm_patterns": [
+          "Kick on beat 1, snare on beat 3 (half-time feel)",
+          "Syncopated bass stabs",
+          "Sparse percussion"
+        ]
+      },
+      "influences": ["UK Garage", "2-Step", "Jungle", "Dub"],
+      "derivatives": ["Brostep", "Riddim", "Drumstep", "Future Bass (via sound design)"],
+      "timeline": [
+        {
+          "period": "1999–2005",
+          "description": "Dark, sparse, sub-heavy tracks from South London producers."
+        },
+        {
+          "period": "2006–2010",
+          "description": "Growth of deep dubstep and early international recognition."
+        },
+        {
+          "period": "2010–2015",
+          "description": "Explosion of aggressive brostep and festival-oriented sound."
+        },
+        {
+          "period": "2016–present",
+          "description": "Coexistence of deep, experimental dubstep and heavy riddim styles."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Skream",
+          "notable_tracks": ["Midnight Request Line"]
+        },
+        {
+          "name": "Benga",
+          "notable_tracks": ["Night"]
+        }
       ],
       "subgenres": [
-        "Brostep",
-        "Deep Dubstep",
-        "Drumstep",
-        "Riddim",
-        "Tearout"
+        {
+          "name": "Deep Dubstep",
+          "era": "2003–present",
+          "bpm_range": [138, 142],
+          "characteristics": [
+            "Minimal drums with strong sub-bass focus",
+            "Dub-influenced delays and reverbs",
+            "Dark, spacious atmospheres"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [138, 140],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "low"
+          },
+          "artists": [
+            {
+              "name": "Mala",
+              "notable_tracks": ["Alicia"]
+            },
+            {
+              "name": "Burial",
+              "notable_tracks": ["Archangel"]
+            }
+          ]
+        },
+        {
+          "name": "Brostep",
+          "era": "2008–present",
+          "bpm_range": [140, 150],
+          "characteristics": [
+            "Aggressive midrange 'talking' basses",
+            "Huge build-ups and drops",
+            "High-energy festival sound"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 145],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "Skrillex",
+              "notable_tracks": ["Scary Monsters and Nice Sprites"]
+            },
+            {
+              "name": "Zomboy",
+              "notable_tracks": ["Terror Squad"]
+            }
+          ]
+        },
+        {
+          "name": "Riddim",
+          "era": "2012–present",
+          "bpm_range": [140, 150],
+          "characteristics": [
+            "Repetitive, lurching bass patterns",
+            "Focus on groove and head-nod movement",
+            "Simpler sound design than brostep"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 145],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Virtual Riot",
+              "notable_tracks": ["Energy Drink"]
+            },
+            {
+              "name": "Excision",
+              "notable_tracks": ["Robo Kitty"]
+            }
+          ]
+        },
+        {
+          "name": "Drumstep",
+          "era": "2010–present",
+          "bpm_range": [160, 180],
+          "characteristics": [
+            "DnB tempos with half-time dubstep feel",
+            "Fast breaks with heavy bass drops",
+            "Hybrid of drum & bass and dubstep"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [170, 175],
+            "swing": "low",
+            "syncopation": "high",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Nero",
+              "notable_tracks": ["Act Like You Know"]
+            },
+            {
+              "name": "Pegboard Nerds",
+              "notable_tracks": ["Hero"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 5,
       "name": "Drum and Bass",
-      "bpm_range": "160-180",
-      "time_range": "1992-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Fabric", "city": "London"},
-        {"name": "Movement", "city": "Bristol"},
-        {"name": "Renegade Hardware", "city": "London"}
-      ],
+      "origin": "UK",
+      "era": "1993–present",
+      "bpm_range": [160, 180],
+      "time_signature": "4/4",
       "characteristics": [
-        "Fast breakbeats",
-        "Heavy bass and sub-bass lines",
-        "Complex drum programming",
-        "High energy"
+        "Fast breakbeats with complex syncopation",
+        "Heavy sub-basslines",
+        "High energy and rapid drum programming",
+        "Use of sampled funk breaks (e.g. Amen break)"
+      ],
+      "typical_instruments": [
+        "Sampled breakbeats",
+        "Sub-bass synthesizers",
+        "Pads and atmospheric textures"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [170, 175],
+        "swing": "medium",
+        "syncopation": "very high",
+        "bass_emphasis": "high",
+        "harmonic_complexity": "medium",
+        "texture_density": "high",
+        "common_rhythm_patterns": [
+          "Broken kick-snare with ghost notes",
+          "16th-note hi-hats and rides"
+        ]
+      },
+      "influences": ["Jungle", "Rave", "Reggae", "Hip-Hop"],
+      "derivatives": ["Liquid DnB", "Neurofunk", "Jump Up", "Drumstep"],
+      "timeline": [
+        {
+          "period": "1993–1997",
+          "description": "Transition from jungle to early drum & bass with darker tones."
+        },
+        {
+          "period": "1998–2005",
+          "description": "Rise of techstep and liquid funk; more polished production."
+        },
+        {
+          "period": "2006–present",
+          "description": "Global mainstream recognition and stylistic diversification."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Goldie",
+          "notable_tracks": ["Inner City Life"]
+        },
+        {
+          "name": "Roni Size",
+          "notable_tracks": ["Brown Paper Bag"]
+        }
       ],
       "subgenres": [
-        "Darkstep",
-        "Drumfunk",
-        "Hardstep",
-        "Jump Up",
-        "Liquid DnB",
-        "Neurofunk",
-        "Sambass",
-        "Techstep"
+        {
+          "name": "Liquid DnB",
+          "era": "2000–present",
+          "bpm_range": [170, 174],
+          "characteristics": [
+            "Smooth, soulful melodies and chords",
+            "Vocals and live instrument samples",
+            "Less aggressive drums than other DnB styles"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [170, 174],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "high",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "High Contrast",
+              "notable_tracks": ["If We Ever"]
+            },
+            {
+              "name": "Netsky",
+              "notable_tracks": ["Memory Lane"]
+            }
+          ]
+        },
+        {
+          "name": "Neurofunk",
+          "era": "1997–present",
+          "bpm_range": [170, 176],
+          "characteristics": [
+            "Complex, modulated basslines",
+            "Futuristic, sci-fi aesthetic",
+            "Tight, aggressive drum programming"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [172, 176],
+            "swing": "low",
+            "syncopation": "high",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "medium",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "Noisia",
+              "notable_tracks": ["Stigma"]
+            },
+            {
+              "name": "Black Sun Empire",
+              "notable_tracks": ["Arrakis"]
+            }
+          ]
+        },
+        {
+          "name": "Jump Up",
+          "era": "1995–present",
+          "bpm_range": [170, 176],
+          "characteristics": [
+            "Bouncy, catchy basslines",
+            "Party-oriented, playful mood",
+            "Simple melodies and hooks"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [172, 176],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "DJ Hazard",
+              "notable_tracks": ["Bricks Don't Roll"]
+            },
+            {
+              "name": "Hedex",
+              "notable_tracks": ["MHITR"]
+            }
+          ]
+        },
+        {
+          "name": "Jungle",
+          "era": "1990–present",
+          "bpm_range": [155, 170],
+          "characteristics": [
+            "Chopped Amen and other funk breaks",
+            "Reggae and dancehall influences",
+            "Heavy use of bass and sound system culture"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [160, 170],
+            "swing": "high",
+            "syncopation": "very high",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Shy FX",
+              "notable_tracks": ["Original Nuttah"]
+            },
+            {
+              "name": "LTJ Bukem",
+              "notable_tracks": ["Atlantis"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 6,
-      "name": "Jungle",
-      "bpm_range": "160-180",
-      "time_range": "1990-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "AWOL", "city": "London"},
-        {"name": "Roast", "city": "London"},
-        {"name": "Telepathy", "city": "London"}
-      ],
+      "name": "Trap (EDM)",
+      "origin": "Southern USA / Global EDM",
+      "era": "2012–present",
+      "bpm_range": [130, 150],
+      "time_signature": "4/4",
       "characteristics": [
-        "Amen break samples",
-        "Reggae and dancehall influences",
-        "Fast chopped breakbeats",
-        "Heavy bass"
+        "808 sub-bass and kick patterns",
+        "Rapid hi-hat rolls and triplets",
+        "Half-time feel at 70/140 BPM",
+        "Aggressive leads and brass stabs"
+      ],
+      "typical_instruments": [
+        "808-style drum kits",
+        "Synth brass and leads",
+        "Vocal chops"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [135, 150],
+        "swing": "medium",
+        "syncopation": "medium",
+        "bass_emphasis": "very high",
+        "harmonic_complexity": "low",
+        "texture_density": "high",
+        "common_rhythm_patterns": [
+          "Snare on beat 3 in half-time",
+          "Hi-hat triplets and rolls",
+          "808 slides and glides"
+        ]
+      },
+      "influences": ["Southern Hip-Hop Trap", "Crunk", "Electro House"],
+      "derivatives": ["Festival Trap", "Hybrid Trap", "Future Trap"],
+      "timeline": [
+        {
+          "period": "2012–2014",
+          "description": "EDM festivals adopt trap drops and 808-heavy breakdowns."
+        },
+        {
+          "period": "2015–present",
+          "description": "Fusion with future bass, pop and bass music; more melodic variants."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Baauer",
+          "notable_tracks": ["Harlem Shake"]
+        },
+        {
+          "name": "RL Grime",
+          "notable_tracks": ["Core"]
+        }
       ],
       "subgenres": [
-        "Ragga Jungle",
-        "Darkside Jungle",
-        "Intelligent Jungle"
+        {
+          "name": "Festival Trap",
+          "era": "2012–present",
+          "bpm_range": [140, 150],
+          "characteristics": [
+            "Huge builds and drops for big stages",
+            "Simple, anthemic melodies",
+            "Heavy 808 hits and brass stabs"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 150],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "Yellow Claw",
+              "notable_tracks": ["Till It Hurts"]
+            },
+            {
+              "name": "Flosstradamus",
+              "notable_tracks": ["Rollup"]
+            }
+          ]
+        },
+        {
+          "name": "Hybrid Trap",
+          "era": "2013–present",
+          "bpm_range": [140, 160],
+          "characteristics": [
+            "Trap drums with dubstep-style sound design",
+            "Complex modulated basses",
+            "Frequent switch-ups and fills"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 155],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "TroyBoi",
+              "notable_tracks": ["Afterhours"]
+            },
+            {
+              "name": "UZ",
+              "notable_tracks": ["Trap Shit V13"]
+            }
+          ]
+        },
+        {
+          "name": "Future Trap",
+          "era": "2013–present",
+          "bpm_range": [135, 150],
+          "characteristics": [
+            "More melodic and emotional than festival trap",
+            "Use of chords and atmospheric pads",
+            "Combination of trap drums with lush harmonies"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [135, 145],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "medium",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "What So Not",
+              "notable_tracks": ["High You Are (Branchez Remix)"]
+            },
+            {
+              "name": "San Holo",
+              "notable_tracks": ["Light"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 7,
-      "name": "Trap",
-      "bpm_range": "130-170",
-      "time_range": "2010-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "Echostage", "city": "Washington DC"},
-        {"name": "Exchange LA", "city": "Los Angeles"},
-        {"name": "Avant Gardner", "city": "New York"}
-      ],
+      "name": "Future Bass",
+      "origin": "USA / UK / Japan",
+      "era": "2011–present",
+      "bpm_range": [135, 160],
+      "time_signature": "4/4",
       "characteristics": [
-        "808 drum machine",
-        "Hi-hat rolls and triplets",
-        "Heavy sub-bass",
-        "Aggressive sound design"
+        "Modulated, detuned synth chords",
+        "Heavy sidechain compression for a pumping effect",
+        "Pitched vocal chops",
+        "Emotional, often bittersweet melodies"
+      ],
+      "typical_instruments": [
+        "Detuned supersaw stacks",
+        "Vocal chop samplers",
+        "Soft synth pads and plucks"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [140, 160],
+        "swing": "medium",
+        "syncopation": "medium",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "high",
+        "texture_density": "high",
+        "common_rhythm_patterns": [
+          "Sidechained chords on off-beats",
+          "Snare on beats 2 and 4",
+          "Syncopated fills before drops"
+        ]
+      },
+      "influences": ["Trap", "Jersey Club", "J-Pop", "Future Garage"],
+      "derivatives": ["Kawaii Future Bass", "Melodic Future Bass"],
+      "timeline": [
+        {
+          "period": "2011–2014",
+          "description": "Early experimentation by internet and SoundCloud producers."
+        },
+        {
+          "period": "2015–present",
+          "description": "Mainstream popularity with vocal-driven tracks and pop crossovers."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Flume",
+          "notable_tracks": ["Say It"]
+        },
+        {
+          "name": "Illenium",
+          "notable_tracks": ["Fractures"]
+        }
       ],
       "subgenres": [
-        "Festival Trap",
-        "Future Trap",
-        "Hybrid Trap",
-        "Latin Trap"
+        {
+          "name": "Kawaii Future Bass",
+          "era": "2014–present",
+          "bpm_range": [150, 170],
+          "characteristics": [
+            "Cute, game-like sound design",
+            "Bright, chiptune-like leads",
+            "Influence from anime and J-Pop aesthetics"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [150, 170],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "high",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Snail's House",
+              "notable_tracks": ["Pixel Galaxy"]
+            },
+            {
+              "name": "Moe Shop",
+              "notable_tracks": ["Notice"]
+            }
+          ]
+        },
+        {
+          "name": "Melodic Future Bass",
+          "era": "2013–present",
+          "bpm_range": [135, 150],
+          "characteristics": [
+            "Strong focus on chord progressions and melody",
+            "Emotional, often melancholic vocals",
+            "Smooth, polished sound design"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [140, 150],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "high",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "San Holo",
+              "notable_tracks": ["Light"]
+            },
+            {
+              "name": "Illenium",
+              "notable_tracks": ["Fractures"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 8,
-      "name": "Future Bass",
-      "bpm_range": "130-160",
-      "time_range": "2012-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "Bill Graham Civic Auditorium", "city": "San Francisco"},
-        {"name": "Red Rocks Amphitheatre", "city": "Denver"},
-        {"name": "Brooklyn Mirage", "city": "New York"}
-      ],
+      "name": "Hardstyle",
+      "origin": "Netherlands",
+      "era": "1999–present",
+      "bpm_range": [145, 160],
+      "time_signature": "4/4",
       "characteristics": [
-        "Modulated synthesizers",
-        "Bright, lush chords",
-        "Pitched vocal chops",
-        "Melodic and emotional"
+        "Distorted, punchy kick drums",
+        "Reverse basslines in early forms",
+        "Euphoric, anthem-like melodies",
+        "High-energy festival sound"
+      ],
+      "typical_instruments": [
+        "Distorted kick synths",
+        "Supersaw leads",
+        "Choir and orchestral samples"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [150, 155],
+        "swing": "low",
+        "syncopation": "low",
+        "bass_emphasis": "very high",
+        "harmonic_complexity": "medium",
+        "texture_density": "very high",
+        "common_rhythm_patterns": [
+          "Kick on every beat at ~150 BPM",
+          "Triplet fills in melodies"
+        ]
+      },
+      "influences": ["Hard Trance", "Hardcore", "Gabber"],
+      "derivatives": ["Rawstyle", "Euphoric Hardstyle", "Hardcore (cross-over)"],
+      "timeline": [
+        {
+          "period": "1999–2004",
+          "description": "Early hardstyle with reverse bass and gabber influence."
+        },
+        {
+          "period": "2005–2012",
+          "description": "Euphoric melodies and festival adoption."
+        },
+        {
+          "period": "2013–present",
+          "description": "Split between raw, darker styles and melodic euphoric forms."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Headhunterz",
+          "notable_tracks": ["Dragonborn"]
+        },
+        {
+          "name": "Showtek",
+          "notable_tracks": ["FTS"]
+        }
       ],
       "subgenres": [
-        "Kawaii Future Bass",
-        "Melodic Future Bass",
-        "Chill Future Bass"
+        {
+          "name": "Rawstyle",
+          "era": "2010–present",
+          "bpm_range": [150, 160],
+          "characteristics": [
+            "Very aggressive, distorted kicks",
+            "Dark, raw sound design",
+            "Less emphasis on melodic content"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [150, 160],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "Radical Redemption",
+              "notable_tracks": ["Brutal 6.0"]
+            },
+            {
+              "name": "Act of Rage",
+              "notable_tracks": ["The Infamous"]
+            }
+          ]
+        },
+        {
+          "name": "Euphoric Hardstyle",
+          "era": "2005–present",
+          "bpm_range": [145, 155],
+          "characteristics": [
+            "Big, uplifting melodies",
+            "Emotional and often vocal-driven",
+            "Cleaner kicks than rawstyle"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [148, 152],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Wildstylez",
+              "notable_tracks": ["Timeless"]
+            },
+            {
+              "name": "Headhunterz",
+              "notable_tracks": ["Dragonborn"]
+            }
+          ]
+        },
+        {
+          "name": "Hardcore (cross-over)",
+          "era": "1990–present",
+          "bpm_range": [160, 190],
+          "characteristics": [
+            "Extremely fast tempo and distorted kicks",
+            "Rave and gabber influences",
+            "Often dark and aggressive mood"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [165, 190],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "very high"
+          },
+          "artists": [
+            {
+              "name": "Angerfist",
+              "notable_tracks": ["Riotstarter"]
+            },
+            {
+              "name": "DJ Promo",
+              "notable_tracks": ["Weapons of Divine Temper"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 9,
-      "name": "Hardstyle",
-      "bpm_range": "150-160",
-      "time_range": "1999-present",
-      "country": "Netherlands",
-      "major_clubs": [
-        {"name": "Defqon.1", "city": "Biddinghuizen"},
-        {"name": "Qlimax", "city": "Arnhem"},
-        {"name": "Freaqshow", "city": "Eindhoven"}
-      ],
+      "name": "Electro",
+      "origin": "USA",
+      "era": "Early 1980s–present",
+      "bpm_range": [110, 130],
+      "time_signature": "4/4",
       "characteristics": [
-        "Distorted kick drums",
-        "Euphoric melodies",
-        "Reverse bass",
-        "Energetic and intense"
+        "Syncopated, mechanical drum patterns",
+        "Prominent use of TR-808 drum sounds",
+        "Robotic, vocoder-treated vocals",
+        "Funk-influenced basslines"
+      ],
+      "typical_instruments": [
+        "Roland TR-808",
+        "Analog synth bass",
+        "Vocoder",
+        "Sampler"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [110, 125],
+        "swing": "medium",
+        "syncopation": "high",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "low",
+        "texture_density": "medium",
+        "common_rhythm_patterns": [
+          "Syncopated 16th-note hi-hats",
+          "Snare accents on off-beats"
+        ]
+      },
+      "influences": ["Funk", "Hip-Hop", "Kraftwerk-style Synthpop"],
+      "derivatives": ["Electro House", "Miami Bass"],
+      "timeline": [
+        {
+          "period": "1982–1986",
+          "description": "Breakdance and early hip-hop electro with heavy 808 use."
+        },
+        {
+          "period": "1990–2000",
+          "description": "Underground revival, Detroit electro and European scenes."
+        },
+        {
+          "period": "2000–present",
+          "description": "Influence on electro house, techno and bass music."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Afrika Bambaataa",
+          "notable_tracks": ["Planet Rock"]
+        },
+        {
+          "name": "Egyptian Lover",
+          "notable_tracks": ["Egypt, Egypt"]
+        }
       ],
       "subgenres": [
-        "Euphoric Hardstyle",
-        "Rawstyle",
-        "Uptempo Hardcore",
-        "Nu-Style"
+        {
+          "name": "Electro Funk",
+          "era": "1982–present",
+          "bpm_range": [110, 120],
+          "characteristics": [
+            "Strong funk influence",
+            "Talkbox or vocoder leads",
+            "Designed for breakdancing"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [110, 118],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Afrika Bambaataa",
+              "notable_tracks": ["Planet Rock"]
+            },
+            {
+              "name": "Egyptian Lover",
+              "notable_tracks": ["Egypt, Egypt"]
+            }
+          ]
+        },
+        {
+          "name": "Electro House",
+          "era": "2002–2015 (peak)",
+          "bpm_range": [126, 132],
+          "characteristics": [
+            "Distorted, gritty basslines",
+            "Sidechained leads and big drops",
+            "Often associated with big-room sound"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [126, 130],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Justice",
+              "notable_tracks": ["D.A.N.C.E."]
+            },
+            {
+              "name": "Wolfgang Gartner",
+              "notable_tracks": ["Illmerica"]
+            }
+          ]
+        },
+        {
+          "name": "Fidget House",
+          "era": "2007–2012",
+          "bpm_range": [125, 130],
+          "characteristics": [
+            "Choppy, 'fidgety' bass and vocal samples",
+            "Heavy use of filters and stutters",
+            "Quirky, experimental feel"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [125, 130],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Switch",
+              "notable_tracks": ["A Bit Patchy"]
+            },
+            {
+              "name": "Crookers",
+              "notable_tracks": ["Knobbers"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 10,
-      "name": "Hardcore",
-      "bpm_range": "160-200+",
-      "time_range": "1990-present",
-      "country": "Netherlands",
-      "major_clubs": [
-        {"name": "Thunderdome", "city": "Utrecht"},
-        {"name": "Masters of Hardcore", "city": "Arnhem"},
-        {"name": "Ground Zero", "city": "Rotterdam"}
-      ],
+      "name": "Breakbeat",
+      "origin": "UK",
+      "era": "1990–present",
+      "bpm_range": [110, 150],
+      "time_signature": "4/4",
       "characteristics": [
-        "Very fast tempo",
-        "Distorted kicks",
-        "Aggressive sound",
-        "Industrial influences"
+        "Use of sampled drum breaks",
+        "Syncopated, non-four-on-the-floor patterns",
+        "Strong influence from hip-hop and funk",
+        "Chopped and rearranged breaks (e.g. Amen)"
+      ],
+      "typical_instruments": [
+        "Drum break samples",
+        "Bass synths",
+        "Turntables and samplers"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [120, 140],
+        "swing": "medium",
+        "syncopation": "high",
+        "bass_emphasis": "medium",
+        "harmonic_complexity": "low",
+        "texture_density": "medium",
+        "common_rhythm_patterns": [
+          "Broken kick-snare patterns with ghost notes",
+          "Chopped loops with bar-by-bar variation"
+        ]
+      },
+      "influences": ["Hip-Hop", "Funk", "Electro"],
+      "derivatives": ["Big Beat", "Nu Skool Breaks", "Progressive Breaks", "Breakbeat Hardcore"],
+      "timeline": [
+        {
+          "period": "1990–1995",
+          "description": "Breakbeat hardcore and early rave scene in the UK."
+        },
+        {
+          "period": "1996–2005",
+          "description": "Development of nu skool breaks and big beat."
+        },
+        {
+          "period": "2006–present",
+          "description": "Niche but persistent underground scenes and crossovers."
+        }
+      ],
+      "artists": [
+        {
+          "name": "The Prodigy",
+          "notable_tracks": ["Smack My Bitch Up"]
+        },
+        {
+          "name": "The Chemical Brothers",
+          "notable_tracks": ["Block Rockin' Beats"]
+        }
       ],
       "subgenres": [
-        "Breakcore",
-        "Crossbreed",
-        "Darkcore",
-        "Frenchcore",
-        "Gabber",
-        "Happy Hardcore",
-        "Industrial Hardcore",
-        "Mainstream Hardcore",
-        "Speedcore",
-        "Terrorcore",
-        "UK Hardcore"
+        {
+          "name": "Big Beat",
+          "era": "1994–2002 (peak)",
+          "bpm_range": [110, 130],
+          "characteristics": [
+            "Heavy, distorted breakbeats",
+            "Rock and funk samples",
+            "Anthemic festival sound"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [115, 128],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "The Chemical Brothers",
+              "notable_tracks": ["Block Rockin' Beats"]
+            },
+            {
+              "name": "Fatboy Slim",
+              "notable_tracks": ["Right Here, Right Now"]
+            }
+          ]
+        },
+        {
+          "name": "Nu Skool Breaks",
+          "era": "1998–2010 (peak)",
+          "bpm_range": [130, 140],
+          "characteristics": [
+            "Clean, punchy production",
+            "Emphasis on basslines and modern sound design",
+            "Club-oriented, DJ-friendly arrangements"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [130, 138],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Plump DJs",
+              "notable_tracks": ["The Push"]
+            },
+            {
+              "name": "Stanton Warriors",
+              "notable_tracks": ["Hope Time"]
+            }
+          ]
+        },
+        {
+          "name": "Progressive Breaks",
+          "era": "1998–present",
+          "bpm_range": [125, 135],
+          "characteristics": [
+            "Long, evolving arrangements",
+            "Atmospheric pads and melodic elements",
+            "Hybrid of progressive house and breakbeat"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [126, 132],
+            "swing": "low",
+            "syncopation": "medium",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Hybrid",
+              "notable_tracks": ["Finished Symphony"]
+            },
+            {
+              "name": "Way Out West",
+              "notable_tracks": ["Mindcircus"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 11,
-      "name": "Breakbeat",
-      "bpm_range": "110-150",
-      "time_range": "1990-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "End", "city": "London"},
-        {"name": "Fabric", "city": "London"},
-        {"name": "Heaven", "city": "London"}
-      ],
+      "name": "Ambient",
+      "origin": "UK",
+      "era": "1975–present",
+      "bpm_range": [0, 90],
+      "time_signature": "Varies, often free",
       "characteristics": [
-        "Syncopated breakbeats",
-        "Sampled drum loops",
-        "Funky bass lines",
-        "Hip-hop influenced"
+        "Atmospheric soundscapes and textures",
+        "Little or no percussion",
+        "Focus on timbre and space over rhythm and melody",
+        "Often used for relaxation or background listening"
+      ],
+      "typical_instruments": [
+        "Synth pads",
+        "Field recordings and found sounds",
+        "Processed guitars and pianos"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [0, 80],
+        "swing": "none",
+        "syncopation": "low",
+        "bass_emphasis": "low",
+        "harmonic_complexity": "medium",
+        "texture_density": "variable",
+        "common_rhythm_patterns": [
+          "No fixed rhythmic pattern",
+          "Long sustained tones",
+          "Slow-moving swells"
+        ]
+      },
+      "influences": ["Minimalism", "New Age", "Electronic Experimental Music"],
+      "derivatives": ["Ambient House", "Dark Ambient", "Space Ambient"],
+      "timeline": [
+        {
+          "period": "1975–1985",
+          "description": "Brian Eno and early ambient experiments."
+        },
+        {
+          "period": "1986–2000",
+          "description": "Ambient house and chill-out rooms in raves."
+        },
+        {
+          "period": "2001–present",
+          "description": "Digital and cinematic ambient, game and film soundtracks."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Brian Eno",
+          "notable_tracks": ["An Ending (Ascent)"]
+        },
+        {
+          "name": "Aphex Twin",
+          "notable_tracks": ["Rhubarb"]
+        }
       ],
       "subgenres": [
-        "Big Beat",
-        "Nu Skool Breaks",
-        "Progressive Breaks",
-        "Acid Breaks",
-        "Florida Breaks"
+        {
+          "name": "Dark Ambient",
+          "era": "1980–present",
+          "bpm_range": [0, 70],
+          "characteristics": [
+            "Droning, ominous textures",
+            "Minimal melodic content",
+            "Influence from industrial and experimental music"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [0, 70],
+            "swing": "none",
+            "syncopation": "low",
+            "bass_emphasis": "medium",
+            "harmonic_complexity": "low",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Lustmord",
+              "notable_tracks": ["The Place Where the Black Stars Hang"]
+            },
+            {
+              "name": "Tim Hecker",
+              "notable_tracks": ["Virginal II"]
+            }
+          ]
+        },
+        {
+          "name": "Ambient House",
+          "era": "1988–present",
+          "bpm_range": [90, 110],
+          "characteristics": [
+            "Soft 4/4 beats with ambient textures",
+            "Use of vocal samples and spoken word",
+            "Chill-out style suitable for relaxed dancing"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [90, 110],
+            "swing": "low",
+            "syncopation": "low",
+            "bass_emphasis": "low",
+            "harmonic_complexity": "medium",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "The Orb",
+              "notable_tracks": ["Little Fluffy Clouds"]
+            },
+            {
+              "name": "The KLF",
+              "notable_tracks": ["Chill Out"]
+            }
+          ]
+        },
+        {
+          "name": "Space Ambient",
+          "era": "1980–present",
+          "bpm_range": [0, 80],
+          "characteristics": [
+            "Cosmic, space-themed soundscapes",
+            "Long, slowly evolving drones and pads",
+            "Subtle melodic fragments"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [0, 80],
+            "swing": "none",
+            "syncopation": "low",
+            "bass_emphasis": "low",
+            "harmonic_complexity": "medium",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "Steve Roach",
+              "notable_tracks": ["Structures from Silence"]
+            },
+            {
+              "name": "Carbon Based Lifeforms",
+              "notable_tracks": ["Derelicts"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": 12,
-      "name": "Ambient",
-      "bpm_range": "60-90",
-      "time_range": "1970-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Fridge", "city": "London"},
-        {"name": "The Hacienda", "city": "Manchester"},
-        {"name": "Berghain", "city": "Berlin"}
-      ],
+      "name": "Bass House",
+      "origin": "UK",
+      "era": "2014–present",
+      "bpm_range": [124, 130],
+      "time_signature": "4/4",
       "characteristics": [
-        "Atmospheric soundscapes",
-        "Minimal rhythm",
-        "Textural and ethereal",
-        "Relaxing and meditative"
+        "House drums with wobbling, heavy basslines",
+        "Influence from UK bass and garage",
+        "Club-focused, high-energy grooves",
+        "Frequent use of vocal chops"
+      ],
+      "typical_instruments": [
+        "Sub and mid-bass synths",
+        "House drum kits",
+        "Vocal chop samplers"
+      ],
+      "audio_features": {
+        "tempo_bpm_range": [124, 128],
+        "swing": "medium",
+        "syncopation": "medium",
+        "bass_emphasis": "very high",
+        "harmonic_complexity": "low",
+        "texture_density": "high",
+        "common_rhythm_patterns": [
+          "Four-on-the-floor kicks",
+          "Syncopated bass hits between beats",
+          "Claps on beats 2 and 4"
+        ]
+      },
+      "influences": ["House", "UK Garage", "Dubstep", "UK Bass"],
+      "derivatives": ["UK Bass", "G-House"],
+      "timeline": [
+        {
+          "period": "2014–2017",
+          "description": "Emergence in UK and US bass scenes with strong online/SoundCloud presence."
+        },
+        {
+          "period": "2018–present",
+          "description": "Festival adoption and fusion with tech house and mainstream house."
+        }
+      ],
+      "artists": [
+        {
+          "name": "Jauz",
+          "notable_tracks": ["Feel the Volume"]
+        },
+        {
+          "name": "Tchami",
+          "notable_tracks": ["Promesses"]
+        }
       ],
       "subgenres": [
-        "Ambient Dub",
-        "Ambient House",
-        "Dark Ambient",
-        "Drone",
-        "Illbient",
-        "Psybient",
-        "Space Ambient"
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Disco",
-      "bpm_range": "110-130",
-      "time_range": "1970-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "Studio 54", "city": "New York"},
-        {"name": "Paradise Garage", "city": "New York"},
-        {"name": "The Loft", "city": "New York"}
-      ],
-      "characteristics": [
-        "Four-on-the-floor beat",
-        "Syncopated basslines",
-        "String sections",
-        "Orchestral arrangements"
-      ],
-      "subgenres": [
-        "Disco House",
-        "Euro Disco",
-        "Italo Disco",
-        "Nu-Disco",
-        "Space Disco"
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Electro",
-      "bpm_range": "120-135",
-      "time_range": "1980-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "Roxy NYC", "city": "New York"},
-        {"name": "The Music Box", "city": "Chicago"},
-        {"name": "Rex Club", "city": "Paris"}
-      ],
-      "characteristics": [
-        "Funk-influenced",
-        "Robotic vocals (vocoders)",
-        "Roland TR-808 drum machine",
-        "Synthesizer bass"
-      ],
-      "subgenres": [
-        "Electro Funk",
-        "Electro House",
-        "Electroclash",
-        "Fidget House"
-      ]
-    },
-    {
-      "id": 15,
-      "name": "UK Garage",
-      "bpm_range": "130-135",
-      "time_range": "1993-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Ministry of Sound", "city": "London"},
-        {"name": "Twice as Nice", "city": "London"},
-        {"name": "Pure Silk", "city": "London"}
-      ],
-      "characteristics": [
-        "Shuffled rhythms",
-        "Syncopated hi-hats",
-        "R&B influences",
-        "Pitched vocals"
-      ],
-      "subgenres": [
-        "2-Step",
-        "Bassline",
-        "Dubstep",
-        "Future Garage",
-        "Grime",
-        "Speed Garage"
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Grime",
-      "bpm_range": "140",
-      "time_range": "2000-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Rhythm Division", "city": "London"},
-        {"name": "Sidewinder", "city": "London"},
-        {"name": "Deja Vu FM", "city": "London"}
-      ],
-      "characteristics": [
-        "Aggressive MCs",
-        "Electronic beats",
-        "Dark atmospheres",
-        "UK rap influence"
-      ],
-      "subgenres": [
-        "Eski Beat",
-        "Sublow",
-        "Rhythm and Grime"
-      ]
-    },
-    {
-      "id": 17,
-      "name": "IDM (Intelligent Dance Music)",
-      "bpm_range": "Variable",
-      "time_range": "1991-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Warp Records Events", "city": "Sheffield"},
-        {"name": "Sonar Festival", "city": "Barcelona"},
-        {"name": "Mutek", "city": "Montreal"}
-      ],
-      "characteristics": [
-        "Complex rhythms",
-        "Experimental sound design",
-        "Cerebral and intricate",
-        "Non-dance floor oriented"
-      ],
-      "subgenres": [
-        "Braindance",
-        "Drill and Bass",
-        "Glitch"
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Industrial",
-      "bpm_range": "120-150",
-      "time_range": "1975-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Slimelight", "city": "London"},
-        {"name": "Neo", "city": "Chicago"},
-        {"name": "Batcave", "city": "London"}
-      ],
-      "characteristics": [
-        "Harsh mechanical sounds",
-        "Distorted vocals",
-        "Aggressive aesthetics",
-        "Dark atmosphere"
-      ],
-      "subgenres": [
-        "EBM (Electronic Body Music)",
-        "Aggrotech",
-        "Dark Electro",
-        "Industrial Techno",
-        "Power Electronics",
-        "Rhythmic Noise"
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Downtempo",
-      "bpm_range": "80-110",
-      "time_range": "1990-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Blue Note", "city": "London"},
-        {"name": "Bar 13", "city": "London"},
-        {"name": "Café del Mar", "city": "Ibiza"}
-      ],
-      "characteristics": [
-        "Relaxed tempo",
-        "Atmospheric",
-        "Chill-out vibe",
-        "Jazz and funk influences"
-      ],
-      "subgenres": [
-        "Chillout",
-        "Lo-fi Hip Hop",
-        "Trip Hop",
-        "Acid Jazz"
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Bass Music",
-      "bpm_range": "130-150",
-      "time_range": "2005-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Fabric", "city": "London"},
-        {"name": "Corsica Studios", "city": "London"},
-        {"name": "Sub Club", "city": "Glasgow"}
-      ],
-      "characteristics": [
-        "Focus on bass frequencies",
-        "Heavy sub-bass",
-        "Experimental sound design",
-        "Various tempo influences"
-      ],
-      "subgenres": [
-        "Future Bass",
-        "Trap",
-        "Dubstep",
-        "Juke",
-        "Footwork",
-        "Jersey Club"
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Vaporwave",
-      "bpm_range": "60-90",
-      "time_range": "2010-present",
-      "country": "Internet/USA",
-      "major_clubs": [
-        {"name": "Online Platforms", "city": "N/A"},
-        {"name": "Art Galleries", "city": "Various"},
-        {"name": "Underground Events", "city": "Various"}
-      ],
-      "characteristics": [
-        "Slowed-down samples",
-        "80s/90s nostalgia",
-        "Surreal aesthetics",
-        "Internet culture references"
-      ],
-      "subgenres": [
-        "Future Funk",
-        "Mallsoft",
-        "Simpsonwave",
-        "Hardvapour"
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Synthwave",
-      "bpm_range": "100-130",
-      "time_range": "2000-present",
-      "country": "France/USA",
-      "major_clubs": [
-        {"name": "Folies Pigalle", "city": "Paris"},
-        {"name": "The Echo", "city": "Los Angeles"},
-        {"name": "Elsewhere", "city": "New York"}
-      ],
-      "characteristics": [
-        "1980s nostalgia",
-        "Retro synthesizers",
-        "Cinematic atmosphere",
-        "Outrun aesthetics"
-      ],
-      "subgenres": [
-        "Outrun",
-        "Darksynth",
-        "Dreamwave",
-        "Cyberpunk"
-      ]
-    },
-    {
-      "id": 23,
-      "name": "Footwork",
-      "bpm_range": "150-170",
-      "time_range": "1990-present",
-      "country": "USA",
-      "major_clubs": [
-        {"name": "The Shrine", "city": "Chicago"},
-        {"name": "Smart Bar", "city": "Chicago"},
-        {"name": "Corsica Studios", "city": "London"}
-      ],
-      "characteristics": [
-        "Rapid-fire percussion",
-        "Syncopated rhythms",
-        "Sample-based production",
-        "Dance battle origins"
-      ],
-      "subgenres": [
-        "Juke",
-        "Ghetto House"
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Psytrance",
-      "bpm_range": "135-150",
-      "time_range": "1994-present",
-      "country": "Israel/India",
-      "major_clubs": [
-        {"name": "Hilltop", "city": "Goa"},
-        {"name": "Boom Festival", "city": "Portugal"},
-        {"name": "Ozora Festival", "city": "Hungary"}
-      ],
-      "characteristics": [
-        "Hypnotic rhythms",
-        "Layered melodies",
-        "Trippy sound design",
-        "Spiritual atmosphere"
-      ],
-      "subgenres": [
-        "Full-On",
-        "Dark Psy",
-        "Progressive Psytrance",
-        "Suomi Saundi",
-        "Psybreaks",
-        "Psychill"
-      ]
-    },
-    {
-      "id": 25,
-      "name": "Glitch Hop",
-      "bpm_range": "90-115",
-      "time_range": "2000-present",
-      "country": "USA/UK",
-      "major_clubs": [
-        {"name": "The Black Box", "city": "Denver"},
-        {"name": "Neumos", "city": "Seattle"},
-        {"name": "Fabric", "city": "London"}
-      ],
-      "characteristics": [
-        "Glitchy sound effects",
-        "Hip-hop influences",
-        "Complex rhythms",
-        "Heavy bass"
-      ],
-      "subgenres": [
-        "Neurohop",
-        "Wonky"
-      ]
-    },
-    {
-      "id": 26,
-      "name": "Chiptune",
-      "bpm_range": "Variable",
-      "time_range": "1980-present",
-      "country": "Japan/USA",
-      "major_clubs": [
-        {"name": "Blip Festival", "city": "New York"},
-        {"name": "MAGFest", "city": "Washington DC"},
-        {"name": "8static Festival", "city": "Various"}
-      ],
-      "characteristics": [
-        "8-bit and 16-bit sounds",
-        "Video game aesthetics",
-        "Retro hardware",
-        "Nostalgic melodies"
-      ],
-      "subgenres": [
-        "Bitpop",
-        "Nanoloop",
-        "Micromusic"
-      ]
-    },
-    {
-      "id": 27,
-      "name": "Hard Dance",
-      "bpm_range": "145-180",
-      "time_range": "1992-present",
-      "country": "UK/Netherlands",
-      "major_clubs": [
-        {"name": "Godskitchen", "city": "Birmingham"},
-        {"name": "Tidy Weekender", "city": "Various UK"},
-        {"name": "Q-dance Events", "city": "Netherlands"}
-      ],
-      "characteristics": [
-        "Fast tempo",
-        "Hard kicks",
-        "Euphoric melodies",
-        "High energy"
-      ],
-      "subgenres": [
-        "Hard House",
-        "Hard Trance",
-        "Hardstyle",
-        "Hardcore"
-      ]
-    },
-    {
-      "id": 28,
-      "name": "Electronica",
-      "bpm_range": "Variable",
-      "time_range": "1980-present",
-      "country": "UK/USA",
-      "major_clubs": [
-        {"name": "Ministry of Sound", "city": "London"},
-        {"name": "Output", "city": "New York"},
-        {"name": "Smart Bar", "city": "Chicago"}
-      ],
-      "characteristics": [
-        "Broad umbrella term",
-        "Electronic instrumentation",
-        "Experimental tendencies",
-        "Non-specific genre"
-      ],
-      "subgenres": [
-        "Folktronica",
-        "Live Electronic",
-        "Nu Jazz",
-        "Progressive Electronic"
-      ]
-    },
-    {
-      "id": 29,
-      "name": "Dancehall Pop",
-      "bpm_range": "90-110",
-      "time_range": "2010-present",
-      "country": "Jamaica/USA",
-      "major_clubs": [
-        {"name": "Quad", "city": "Kingston"},
-        {"name": "The Loft", "city": "New York"},
-        {"name": "Electric Brixton", "city": "London"}
-      ],
-      "characteristics": [
-        "Caribbean rhythms",
-        "Pop production",
-        "Electronic beats",
-        "Reggae influences"
-      ],
-      "subgenres": [
-        "Tropical House",
-        "Moombahton",
-        "Reggaeton"
-      ]
-    },
-    {
-      "id": 30,
-      "name": "Ethnic Electronica",
-      "bpm_range": "Variable",
-      "time_range": "1990-present",
-      "country": "Various",
-      "major_clubs": [
-        {"name": "Fabric", "city": "London"},
-        {"name": "Rex Club", "city": "Paris"},
-        {"name": "Club Transmediale", "city": "Berlin"}
-      ],
-      "characteristics": [
-        "Traditional instruments",
-        "Electronic production",
-        "Cultural fusion",
-        "World music elements"
-      ],
-      "subgenres": [
-        "Asian Underground",
-        "Budots",
-        "Changa Tuki",
-        "Denpa Music",
-        "Funk Carioca",
-        "Guaracha",
-        "Merenhouse",
-        "Nortec",
-        "Raboday",
-        "Rara Tech",
-        "Russ Music",
-        "Shamstep",
-        "Tecnocumbia",
-        "Tribal Guarachero",
-        "Worldbeat"
-      ]
-    },
-    {
-      "id": 31,
-      "name": "Hauntology",
-      "bpm_range": "70-100",
-      "time_range": "2006-present",
-      "country": "UK",
-      "major_clubs": [
-        {"name": "Cafe OTO", "city": "London"},
-        {"name": "Ghost Box Events", "city": "Various UK"},
-        {"name": "The Shacklewell Arms", "city": "London"}
-      ],
-      "characteristics": [
-        "Nostalgic samples",
-        "Eerie atmosphere",
-        "British cultural references",
-        "Lo-fi aesthetics"
-      ],
-      "subgenres": [
-        "Hypnagogic Pop",
-        "Witch House"
-      ]
-    },
-    {
-      "id": 32,
-      "name": "Electronic Rock",
-      "bpm_range": "110-150",
-      "time_range": "1980-present",
-      "country": "UK/USA",
-      "major_clubs": [
-        {"name": "Electric Ballroom", "city": "London"},
-        {"name": "Irving Plaza", "city": "New York"},
-        {"name": "House of Blues", "city": "Los Angeles"}
-      ],
-      "characteristics": [
-        "Rock instrumentation",
-        "Electronic elements",
-        "Guitar and synthesizers",
-        "Live band format"
-      ],
-      "subgenres": [
-        "Synthpop",
-        "New Wave",
-        "Electroclash",
-        "Indietronica"
-      ]
-    },
-    {
-      "id": 33,
-      "name": "Dub",
-      "bpm_range": "60-90",
-      "time_range": "1960-present",
-      "country": "Jamaica",
-      "major_clubs": [
-        {"name": "Dub Club", "city": "Los Angeles"},
-        {"name": "Shaka's", "city": "London"},
-        {"name": "Bass Culture", "city": "New York"}
-      ],
-      "characteristics": [
-        "Heavy use of reverb and delay",
-        "Emphasis on bass and drums",
-        "Instrumental versions",
-        "Studio as instrument"
-      ],
-      "subgenres": [
-        "Dub Techno",
-        "Ambient Dub",
-        "Digital Dub",
-        "Steppers"
+        {
+          "name": "UK Bass",
+          "era": "2010–present",
+          "bpm_range": [125, 135],
+          "characteristics": [
+            "Heavy, subby basslines with house or garage drums",
+            "Dark, warehouse-oriented sound",
+            "Strong sound system culture focus"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [125, 135],
+            "swing": "medium",
+            "syncopation": "high",
+            "bass_emphasis": "very high",
+            "harmonic_complexity": "low",
+            "texture_density": "high"
+          },
+          "artists": [
+            {
+              "name": "AC Slater",
+              "notable_tracks": ["Bass Inside"]
+            },
+            {
+              "name": "Taiki Nulight",
+              "notable_tracks": ["Break"]
+            }
+          ]
+        },
+        {
+          "name": "G-House",
+          "era": "2012–present",
+          "bpm_range": [120, 128],
+          "characteristics": [
+            "House beats with hip-hop style vocals",
+            "Dark, groovy basslines",
+            "Influence from gangsta rap and bass music"
+          ],
+          "audio_features": {
+            "tempo_bpm_range": [120, 126],
+            "swing": "medium",
+            "syncopation": "medium",
+            "bass_emphasis": "high",
+            "harmonic_complexity": "low",
+            "texture_density": "medium"
+          },
+          "artists": [
+            {
+              "name": "Malaa",
+              "notable_tracks": ["Notorious"]
+            },
+            {
+              "name": "Amine Edge & DANCE",
+              "notable_tracks": ["Going to Heaven with the Goodie-Goodies"]
+            }
+          ]
+        }
       ]
     }
   ]
