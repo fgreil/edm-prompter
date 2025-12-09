@@ -1,0 +1,172 @@
+{
+  "edm_styles": [
+    {
+      "id": 1,
+      "name": "House",
+      "bpm_range": "120-130",
+      "origin": "Chicago, USA",
+      "decade": "1980s",
+      "characteristics": [
+        "Four-on-the-floor beat",
+        "Repetitive 4/4 rhythm",
+        "Synthesized basslines",
+        "Piano or organ loops"
+      ],
+      "subgenres": ["Deep House", "Tech House", "Progressive House", "Electro House"]
+    },
+    {
+      "id": 2,
+      "name": "Techno",
+      "bpm_range": "120-150",
+      "origin": "Detroit, USA",
+      "decade": "1980s",
+      "characteristics": [
+        "Repetitive instrumental music",
+        "Heavy use of drum machines",
+        "Futuristic and industrial sound",
+        "Minimal vocals"
+      ],
+      "subgenres": ["Detroit Techno", "Minimal Techno", "Acid Techno", "Industrial Techno"]
+    },
+    {
+      "id": 3,
+      "name": "Trance",
+      "bpm_range": "125-150",
+      "origin": "Germany",
+      "decade": "1990s",
+      "characteristics": [
+        "Melodic and euphoric",
+        "Long build-ups and breakdowns",
+        "Layered synth patterns",
+        "Emotional atmosphere"
+      ],
+      "subgenres": ["Progressive Trance", "Uplifting Trance", "Psychedelic Trance", "Vocal Trance"]
+    },
+    {
+      "id": 4,
+      "name": "Dubstep",
+      "bpm_range": "138-142",
+      "origin": "London, UK",
+      "decade": "2000s",
+      "characteristics": [
+        "Heavy bass and sub-bass",
+        "Syncopated rhythms",
+        "Wobble bass (LFO modulation)",
+        "Half-time drum patterns"
+      ],
+      "subgenres": ["Brostep", "Riddim", "Deep Dubstep", "Drumstep"]
+    },
+    {
+      "id": 5,
+      "name": "Drum and Bass",
+      "bpm_range": "160-180",
+      "origin": "UK",
+      "decade": "1990s",
+      "characteristics": [
+        "Fast breakbeats",
+        "Heavy bass and sub-bass lines",
+        "Complex drum programming",
+        "High energy"
+      ],
+      "subgenres": ["Liquid DnB", "Neurofunk", "Jump Up", "Jungle"]
+    },
+    {
+      "id": 6,
+      "name": "Trap",
+      "bpm_range": "130-170",
+      "origin": "Southern USA",
+      "decade": "2010s",
+      "characteristics": [
+        "808 drum machine",
+        "Hi-hat rolls and triplets",
+        "Heavy sub-bass",
+        "Aggressive sound design"
+      ],
+      "subgenres": ["Festival Trap", "Hybrid Trap", "Future Trap"]
+    },
+    {
+      "id": 7,
+      "name": "Future Bass",
+      "bpm_range": "130-160",
+      "origin": "USA/UK",
+      "decade": "2010s",
+      "characteristics": [
+        "Modulated synthesizers",
+        "Bright, lush chords",
+        "Pitched vocal chops",
+        "Melodic and emotional"
+      ],
+      "subgenres": ["Kawaii Future Bass", "Melodic Future Bass"]
+    },
+    {
+      "id": 8,
+      "name": "Hardstyle",
+      "bpm_range": "150-160",
+      "origin": "Netherlands",
+      "decade": "2000s",
+      "characteristics": [
+        "Distorted kick drums",
+        "Euphoric melodies",
+        "Reverse bass",
+        "Energetic and intense"
+      ],
+      "subgenres": ["Rawstyle", "Euphoric Hardstyle", "Hardcore"]
+    },
+    {
+      "id": 9,
+      "name": "Electro",
+      "bpm_range": "120-135",
+      "origin": "USA",
+      "decade": "1980s",
+      "characteristics": [
+        "Funk-influenced",
+        "Robotic vocals (vocoders)",
+        "Roland TR-808 drum machine",
+        "Synthesizer bass"
+      ],
+      "subgenres": ["Electro House", "Electro Funk", "Fidget House"]
+    },
+    {
+      "id": 10,
+      "name": "Breakbeat",
+      "bpm_range": "110-150",
+      "origin": "UK",
+      "decade": "1990s",
+      "characteristics": [
+        "Syncopated breakbeats",
+        "Sampled drum loops",
+        "Funky bass lines",
+        "Hip-hop influenced"
+      ],
+      "subgenres": ["Big Beat", "Nu Skool Breaks", "Progressive Breaks"]
+    },
+    {
+      "id": 11,
+      "name": "Ambient",
+      "bpm_range": "60-90",
+      "origin": "UK",
+      "decade": "1970s",
+      "characteristics": [
+        "Atmospheric soundscapes",
+        "Minimal rhythm",
+        "Textural and ethereal",
+        "Relaxing and meditative"
+      ],
+      "subgenres": ["Dark Ambient", "Ambient House", "Space Ambient"]
+    },
+    {
+      "id": 12,
+      "name": "Bass House",
+      "bpm_range": "125-130",
+      "origin": "UK",
+      "decade": "2010s",
+      "characteristics": [
+        "Heavy bass drops",
+        "Four-on-the-floor beat",
+        "Wobbling basslines",
+        "Club-oriented"
+      ],
+      "subgenres": ["UK Bass", "G-House"]
+    }
+  ]
+}
