@@ -1,38 +1,57 @@
 {
-  // EAS CLI version requirement
   "cli": {
-    "version": ">= 3.0.0"
+    // Minimum required version of EAS CLI
+    "version": ">= 3.0.0",
+
+    // How the app version is sourced:
+    // "remote" = EAS Build increments and manages versions on EAS servers.
+    // "local"  = expo reads version from app.json.
+    "appVersionSource": "remote"
   },
 
-  // Build profiles that EAS uses
   "build": {
-    // For local testing or internal installs
+    // ------------------------------------------
+    // DEVELOPMENT BUILD (for local device testing)
+    // ------------------------------------------
     "development": {
-      "developmentClient": true,
-      "distribution": "internal",
+      "developmentClient": true,   // Makes a custom Expo Dev Client
+      "distribution": "internal",  // Build is not for App Store, only internal testing
+
       "android": {
-        "buildType": "apk"   // Generate APK
+        // Force output to be APK (easy installation on Android)
+        "buildType": "apk"
       }
     },
 
-    // For internal previews
+    // ------------------------------------------
+    // PREVIEW BUILD (for QA testers, TestFlight equivalent)
+    // ------------------------------------------
     "preview": {
       "distribution": "internal",
+
       "android": {
-        "buildType": "apk"   // Also APK
+        // Still APK, easier for testers to install on devices
+        "buildType": "apk"
       }
     },
 
-    // Production build for Play Store or manual distribution
+    // ------------------------------------------
+    // PRODUCTION BUILD (your "official" release)
+    // ------------------------------------------
     "production": {
-      "autoIncrement": true,
+      "autoIncrement": true,   // Automatically bumps app version on each build
+
       "android": {
-        "buildType": "apk"   // IMPORTANT: build APK instead of AAB
+        // This forces a PRODUCTION build to generate an APK and is not Play Store compatible
+        "buildType": "apk"
       }
     }
   },
 
   "submit": {
-    "production": {}
+    "production": {
+      // Configuration for EAS Submit (optional)
+      // This is used when submitting to the Google Play Store or Apple App Store
+    }
   }
 }
