@@ -1,13 +1,13 @@
 // src/navigation/screens/Search/SearchHistoryList.js
 
 import React from "react";
-import { Text, View, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import * as colors from "../../../utils/colors";
 import styles from "./styles";
 
-export default function SearchHistoryList({ data = [], onPress }) {
-  const hasHistory = data && data.length > 0;
+export default function SearchHistoryList({ data, onPress }) {
+  const hasHistory = Array.isArray(data) && data.length > 0;
 
   if (!hasHistory) {
     return (
@@ -19,6 +19,7 @@ export default function SearchHistoryList({ data = [], onPress }) {
         <Text style={styles.blankScreenHeaderTextStyle}>
           You have not used the search yet.
         </Text>
+
         <Text style={styles.detailTextStyle}>
           Enter a keyword to start searching.
         </Text>
@@ -30,24 +31,22 @@ export default function SearchHistoryList({ data = [], onPress }) {
     <ScrollView showsVerticalScrollIndicator={false}>
       <Text style={styles.searchTopTextStyle}>Previously Searched</Text>
 
-      {data.map((keyword, index) => (
-        <TouchableOpacity
-          key={index}
-          activeOpacity={0.7}
-          onPress={() => onPress(keyword)}
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            paddingHorizontal: 12,
-            paddingVertical: 14,
-            borderBottomWidth: 1,
-            borderBottomColor: colors.gray
-          }}
-        >
-          <Text style={styles.listTextStyle}>{keyword}</Text>
-          <MaterialIcons name="history" size={24} color={colors.gray} />
-        </TouchableOpacity>
-      ))}
+      {data.map((entry, index) => {
+        // Our SQLite schema: entry = {keyword, filters}
+        const keyword = typeof entry === "string" ? entry : entry.keyword;
+
+        return (
+          <TouchableOpacity
+            key={index}
+            activeOpacity={0.7}
+            onPress={() => onPress(keyword)}
+            style={styles.historyRow}
+          >
+            <Text style={styles.listTextStyle}>{keyword}</Text>
+            <MaterialIcons name="history" size={24} color={colors.gray} />
+          </TouchableOpacity>
+        );
+      })}
     </ScrollView>
   );
 }
