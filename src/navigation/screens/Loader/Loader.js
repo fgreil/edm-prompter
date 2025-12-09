@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ActivityIndicator, Modal } from "react-native";
 import styles from "./styles";
-import * as colors from "../../utils/colors";
+import * as colors from "../../../utils/colors";
 
 export default function Loader({ visible }) {
   if (!visible) return null;
